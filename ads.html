@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha256-LA89z+k9fjgMKQ/kq4OO2Mrf8VltYml/VES+Rg0fh20=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha256-UK1EiopXIL+KVhfbFa8xrmAWPeBjMVdvYMYkTAEv/HI=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Объявления | Сбагри</title>
+</head>
+
+<body>
+  <div class="top-mobile-applications">
+    <div class="container">
+      <div class="links">
+        <a href="#" target="_blank" class="google-play">Доступно в Google Play</a>
+        <a href="#" target="_blank" class="app-store">Загрузить в App Store</a>
+      </div>
+      <form class="form">
+        <div class="title">Получи ссылку на скачивание по СМС</div>
+        <input type="tel" class="form-control input" placeholder="+7 ___-___-__-__">
+        <button type="submit" class="btn btn-primary">Отправить</button>
+      </form>
+    </div>
+  </div>
+  <header class="main-header-section">
+    <div class="container">
+      <div class="links-and-logo">
+        <a href="/" class="logo">
+          <img src="img/svg/logo.svg" alt="Сбагри">
+        </a>
+        <div class="links">
+          <a class="active">Объявления</a>
+          <a href="tenders.html">Тендеры</a>
+        </div>
+      </div>
+      <div class="town-and-login">
+        <a href="#townModal" class="town-link" data-toggle="modal" data-target="#townModal">Санкт-Петербург</a>
+        <a href="#registrationModal" class="btn btn-success registration-btn" data-toggle="modal" data-target="#registrationModal">Регистрация</a>
+        <a href="#loginModal" class="btn btn-success login-btn" data-toggle="modal" data-target="#loginModal">Войти</a>
+      </div>
+    </div>
+  </header>
+  <div class="categories-section">
+    <div class="container">
+      <a href="#" class="item">
+        <span class="wrapper">
+          <img src="img/categories/cat-1.png" alt="Транспорт">
+        </span>
+        <span class="title">Транспорт</span>
+      </a>
+      <a href="#" class="item">
+        <span class="wrapper">
+          <img src="img/categories/cat-2.png" alt="Недвижимость">
+        </span>
+        <span class="title">Недвижимость</span>
+      </a>
+      <a href="#" class="item">
+        <span class="wrapper">
+          <img src="img/categories/cat-3.png" alt="Строительство и ремонт">
+        </span>
+        <span class="title">Строительство и ремонт</span>
+      </a>
+      <a href="#" class="item">
+        <span class="wrapper">
+          <img src="img/categories/cat-4.png" alt="Дом, дача, сад">
+        </span>
+        <span class="title">Дом, дача, сад</span>
+      </a>
+      <a href="#" class="item">
+        <span class="wrapper">
+          <img src="img/categories/cat-5.png" alt="Услуги">
+        </span>
+        <span class="title">Услуги</span>
+      </a>
+      <a href="#" class="item">
+        <span class="wrapper">
+          <img src="img/categories/cat-6.png" alt="Товары повседневного пользования">
+        </span>
+        <span class="title">Товары повседневного пользования</span>
+      </a>
+      <a href="#" class="item">
+        <span class="wrapper">
+          <img src="img/categories/cat-7.png" alt="Бытовая техника и электроника">
+        </span>
+        <span class="title">Бытовая техника и электроника</span>
+      </a>
+      <a href="#" class="item">
+        <span class="wrapper">
+          <img src="img/categories/cat-8.png" alt="Оборудование для бизнеса и производства">
+        </span>
+        <span class="title">Оборудование для бизнеса и производства</span>
+      </a>
+      <a href="#" class="item">
+        <span class="wrapper">
+          <img src="img/categories/cat-9.png" alt="Красота, здоровье, спорт">
+        </span>
+        <span class="title">Красота, здоровье, спорт</span>
+      </a>
+      <!-- ниже категории для демонстрации слайдера -->
+      <a href="#" class="item">
+        <span class="wrapper">
+          <img src="img/categories/cat-1.png" alt="Транспорт">
+        </span>
+        <span class="title">Транспорт</span>
+      </a>
+      <a href="#" class="item">
+        <span class="wrapper">
+          <img src="img/categories/cat-2.png" alt="Недвижимость">
+        </span>
+        <span class="title">Недвижимость</span>
+      </a>
+    </div>
+  </div>
+  <!-- Тут вывести див аяксом. Условие - если нажата категория, то выводим данные аяксом с сервера. В JS закомментирую -->
+  <div class="sub-categories-section container">
+    <ul class="sub-categories-ul-1">
+      <li>
+        <a href="#">Отделочные материалы</a>
+        <ul class="sub-categories-ul-2">
+          <li><a href="#">Отделочные материалы тест</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Стройка</a>
+        <ul class="sub-categories-ul-2">
+          <li><a href="#">Ворота, ограждения, заборы (4235)</a></li>
+          <li><a href="#">Кирпич, блоки (127)</a></li>
+          <li><a href="#">Лесоматериалы (726)</a></li>
+          <li><a href="#">Сухие строительные смеси, клеи (453)</a></li>
+          <li><a href="#">Герметики и силиконы (1298)</a></li>
+          <li><a href="#">Крепеж, метизы (987)</a></li>
+          <li><a href="#">Утеплители, изолирующие материалы (874)</a></li>
+          <li><a href="#">Дорожные материалы (5605)</a></li>
+          <li><a href="#">Бетонные смеси и растворы (4534)</a></li>
+          <li><a href="#">Кровельные материалы (896)</a></li>
+          <li><a href="#">Бетон, Железобетонные изделия (3453)</a></li>
+          <li><a href="#">Дорожные покрытия, брусчатка (354)</a></li>
+          <li><a href="#">Лестницы и комплектующие (907)</a></li>
+          <li><a href="#">Огнезащитные материалы (567)</a></li>
+          <li><a href="#">Гипсокартон и комплектующие (568)</a></li>
+          <li><a href="#">Другое (908)</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Инструмент</a>
+        <ul class="sub-categories-ul-2">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="main-search-block container">
+    <form class="form">
+      <input type="text" class="form-control search-input" placeholder="Поиск ...">
+      <button type="submit" class="btn btn-primary">Найти</button>
+    </form>
+  </div>
+  <main class="main-area-section">
+    <div class="container cards-container">
+      <div class="card-items-section">
+        <article class="card top">
+          <a href="#" class="img-link">
+            <img src="img/content/jnero.jpg" alt="Новые туфли oskar j. nero">
+          </a>
+          <div class="wrapper">
+            <div class="price">4 000 руб.</div>
+            <h2 class="title"><a href="#">Новые туфли oskar j. nero</a></h2>
+            <div class="category-and-time">
+              <div class="category"><a href="#">Обувь</a></div>
+              <time class="time" datetime="2018-02-05T13:36">13:36</time>
+            </div>
+          </div>
+          <div class="like"></div>
+        </article>
+        <article class="card top">
+          <a href="#" class="img-link">
+            <img src="img/content/adidas.jpg" alt="Adidas yeezy 750 light">
+          </a>
+          <div class="wrapper">
+            <div class="price">2 500 руб.</div>
+            <h2 class="title"><a href="#">Adidas yeezy 750 light</a></h2>
+            <div class="category-and-time">
+              <div class="category"><a href="#">Обувь</a></div>
+              <time class="time" datetime="2018-02-05T13:36">13:36</time>
+            </div>
+          </div>
+          <div class="like"></div>
+        </article>
+        <article class="card top">
+          <a href="#" class="img-link">
+            <img src="img/content/kors.jpg" alt="Сумка michael kors">
+          </a>
+          <div class="wrapper">
+            <div class="price">3 000 руб.</div>
+            <h2 class="title"><a href="#">Сумка michael kors</a></h2>
+            <div class="category-and-time">
+              <div class="category"><a href="#">Кожалантерея</a></div>
+              <time class="time" datetime="2018-02-05T13:36">13:36</time>
+            </div>
+          </div>
+          <div class="like"></div>
+        </article>
+
+        <article class="card hot time">
+          <a href="#" class="img-link">
+            <img src="img/content/zont.jpg" alt="Зонт трость черный">
+          </a>
+          <div class="wrapper">
+            <div class="price">500 руб.</div>
+            <h2 class="title"><a href="#">Зонт трость черный</a></h2>
+            <div class="category-and-time">
+              <div class="category"><a href="#">Аксессуары</a></div>
+              <time class="time" datetime="2018-02-05T13:36">13:36</time>
+            </div>
+          </div>
+          <div class="like"></div>
+        </article>
+        <article class="card hot time verified">
+          <a href="#" class="img-link">
+            <img src="img/content/anorac.jpg" alt="Анорак dc camo">
+          </a>
+          <div class="wrapper">
+            <div class="price">1 500 руб.</div>
+            <h2 class="title"><a href="#">Анорак dc camo</a></h2>
+            <div class="category-and-time">
+              <div class="category"><a href="#">Одежда</a></div>
+              <time class="time" datetime="2018-02-05T13:36">13:36</time>
+            </div>
+          </div>
+          <div class="like active"></div>
+        </article>
+        <article class="card top">
+          <a href="#" class="img-link">
+            <img src="img/content/vesta.jpg" alt="Автомобиль Vesta">
+          </a>
+          <div class="wrapper">
+            <div class="price">395 000 руб.</div>
+            <h2 class="title"><a href="#">Автомобиль Vesta</a></h2>
+            <div class="category-and-time">
+              <div class="category"><a href="#">Легковые автомобили</a></div>
+              <time class="time" datetime="2018-02-05T13:36">13:36</time>
+            </div>
+          </div>
+          <div class="like"></div>
+        </article>
+
+        <article class="card">
+          <a href="#" class="img-link">
+            <img src="img/content/jnero.jpg" alt="Новые туфли oskar j. nero">
+          </a>
+          <div class="wrapper">
+            <div class="price">4 000 руб.</div>
+            <h2 class="title"><a href="#">Новые туфли oskar j. nero</a></h2>
+            <div class="category-and-time">
+              <div class="category"><a href="#">Обувь</a></div>
+              <time class="time" datetime="2018-02-05T13:36">13:36</time>
+            </div>
+          </div>
+          <div class="like"></div>
+        </article>
+        <article class="card">
+          <a href="#" class="img-link">
+            <img src="img/content/adidas.jpg" alt="Adidas yeezy 750 light">
+          </a>
+          <div class="wrapper">
+            <div class="price">2 500 руб.</div>
+            <h2 class="title"><a href="#">Adidas yeezy 750 light</a></h2>
+            <div class="category-and-time">
+              <div class="category"><a href="#">Обувь</a></div>
+              <time class="time" datetime="2018-02-05T13:36">13:36</time>
+            </div>
+          </div>
+          <div class="like"></div>
+        </article>
+        <article class="card">
+          <a href="#" class="img-link">
+            <img src="img/content/kors.jpg" alt="Сумка michael kors">
+          </a>
+          <div class="wrapper">
+            <div class="price">3 000 руб.</div>
+            <h2 class="title"><a href="#">Сумка michael kors</a></h2>
+            <div class="category-and-time">
+              <div class="category"><a href="#">Кожалантерея</a></div>
+              <time class="time" datetime="2018-02-05T13:36">13:36</time>
+            </div>
+          </div>
+          <div class="like"></div>
+        </article>
+
+        <article class="card">
+          <a href="#" class="img-link">
+            <img src="img/content/zont.jpg" alt="Зонт трость черный">
+          </a>
+          <div class="wrapper">
+            <div class="price">500 руб.</div>
+            <h2 class="title"><a href="#">Зонт трость черный</a></h2>
+            <div class="category-and-time">
+              <div class="category"><a href="#">Аксессуары</a></div>
+              <time class="time" datetime="2018-02-05T13:36">13:36</time>
+            </div>
+          </div>
+          <div class="like"></div>
+        </article>
+        <article class="card">
+          <a href="#" class="img-link">
+            <img src="img/content/anorac.jpg" alt="Анорак dc camo">
+          </a>
+          <div class="wrapper">
+            <div class="price">1 500 руб.</div>
+            <h2 class="title"><a href="#">Анорак dc camo</a></h2>
+            <div class="category-and-time">
+              <div class="category"><a href="#">Одежда</a></div>
+              <time class="time" datetime="2018-02-05T13:36">13:36</time>
+            </div>
+          </div>
+          <div class="like"></div>
+        </article>
+        <article class="card">
+          <a href="#" class="img-link">
+            <img src="img/content/vesta.jpg" alt="Автомобиль Vesta">
+          </a>
+          <div class="wrapper">
+            <div class="price">395 000 руб.</div>
+            <h2 class="title"><a href="#">Автомобиль Vesta</a></h2>
+            <div class="category-and-time">
+              <div class="category"><a href="#">Легковые автомобили</a></div>
+              <time class="time" datetime="2018-02-05T13:36">13:36</time>
+            </div>
+          </div>
+          <div class="like"></div>
+        </article>
+
+        <article class="card vip">
+          <a href="#" class="img-link">
+            <img src="img/content/jnero.jpg" alt="Новые туфли oskar j. nero">
+          </a>
+          <div class="wrapper">
+            <div class="price">4 000 руб.</div>
+            <h2 class="title"><a href="#">Новые туфли oskar j. nero</a></h2>
+            <div class="category-and-time">
+              <div class="category"><a href="#">Обувь</a></div>
+              <time class="time" datetime="2018-02-05T13:36">13:36</time>
+            </div>
+          </div>
+          <div class="like"></div>
+        </article>
+        <article class="card top">
+          <a href="#" class="img-link">
+            <img src="img/content/adidas.jpg" alt="Adidas yeezy 750 light">
+          </a>
+          <div class="wrapper">
+            <div class="price">2 500 руб.</div>
+            <h2 class="title"><a href="#">Adidas yeezy 750 light</a></h2>
+            <div class="category-and-time">
+              <div class="category"><a href="#">Обувь</a></div>
+              <time class="time" datetime="2018-02-05T13:36">13:36</time>
+            </div>
+          </div>
+          <div class="like"></div>
+        </article>
+        <article class="card top">
+          <a href="#" class="img-link">
+            <img src="img/content/kors.jpg" alt="Сумка michael kors">
+          </a>
+          <div class="wrapper">
+            <div class="price">3 000 руб.</div>
+            <h2 class="title"><a href="#">Сумка michael kors</a></h2>
+            <div class="category-and-time">
+              <div class="category"><a href="#">Кожалантерея</a></div>
+              <time class="time" datetime="2018-02-05T13:36">13:36</time>
+            </div>
+          </div>
+          <div class="like"></div>
+        </article>
+
+        <article class="card">
+          <a href="#" class="img-link">
+            <img src="img/content/zont.jpg" alt="Зонт трость черный">
+          </a>
+          <div class="wrapper">
+            <div class="price">500 руб.</div>
+            <h2 class="title"><a href="#">Зонт трость черный</a></h2>
+            <div class="category-and-time">
+              <div class="category"><a href="#">Аксессуары</a></div>
+              <time class="time" datetime="2018-02-05T13:36">13:36</time>
+            </div>
+          </div>
+          <div class="like"></div>
+        </article>
+        <article class="card hot time">
+          <a href="#" class="img-link">
+            <img src="img/content/anorac.jpg" alt="Анорак dc camo">
+          </a>
+          <div class="wrapper">
+            <div class="price">1 500 руб.</div>
+            <h2 class="title"><a href="#">Анорак dc camo</a></h2>
+            <div class="category-and-time">
+              <div class="category"><a href="#">Одежда</a></div>
+              <time class="time" datetime="2018-02-05T13:36">13:36</time>
+            </div>
+          </div>
+          <div class="like"></div>
+        </article>
+        <article class="card">
+          <a href="#" class="img-link">
+            <img src="img/content/vesta.jpg" alt="Автомобиль Vesta">
+          </a>
+          <div class="wrapper">
+            <div class="price">395 000 руб.</div>
+            <h2 class="title"><a href="#">Автомобиль Vesta</a></h2>
+            <div class="category-and-time">
+              <div class="category"><a href="#">Легковые автомобили</a></div>
+              <time class="time" datetime="2018-02-05T13:36">13:36</time>
+            </div>
+          </div>
+          <div class="like"></div>
+        </article>
+
+        <div class="more-cards">Показать ещё</div> <!-- Загрузка элементов аяксом -->
+      </div>
+      <aside class="vip-sidebar-section">
+        <article class="card vip">
+          <a href="#" class="img-link">
+            <img src="img/content/jnero.jpg" alt="Новые туфли oskar j. nero">
+          </a>
+          <div class="wrapper">
+            <div class="price">4 000 руб.</div>
+            <h2 class="title"><a href="#">Новые туфли oskar j. nero</a></h2>
+            <div class="category-and-time">
+              <div class="category"><a href="#">Обувь</a></div>
+              <time class="time" datetime="2018-02-05T13:36">13:36</time>
+            </div>
+          </div>
+          <div class="like"></div>
+        </article>
+        <article class="card vip">
+          <a href="#" class="img-link">
+            <img src="img/content/adidas.jpg" alt="Adidas yeezy 750 light">
+          </a>
+          <div class="wrapper">
+            <div class="price">2 500 руб.</div>
+            <h2 class="title"><a href="#">Adidas yeezy 750 light</a></h2>
+            <div class="category-and-time">
+              <div class="category"><a href="#">Обувь</a></div>
+              <time class="time" datetime="2018-02-05T13:36">13:36</time>
+            </div>
+          </div>
+          <div class="like"></div>
+        </article>
+        <article class="card vip">
+          <a href="#" class="img-link">
+            <img src="img/content/kors.jpg" alt="Сумка michael kors">
+          </a>
+          <div class="wrapper">
+            <div class="price">3 000 руб.</div>
+            <h2 class="title"><a href="#">Сумка michael kors</a></h2>
+            <div class="category-and-time">
+              <div class="category"><a href="#">Кожалантерея</a></div>
+              <time class="time" datetime="2018-02-05T13:36">13:36</time>
+            </div>
+          </div>
+          <div class="like"></div>
+        </article>
+      </aside>
+    </div>
+  </main>
+  <footer class="main-footer-section">
+    <div class="container">
+      <div class="copy">© 2018 Sbagry</div>
+      <ul class="nav-list">
+        <li><a href="#">Помощь</a></li>
+        <li><a href="#">Обратная связь</a></li>
+        <li><a href="#">Пользовательское соглашение</a></li>
+      </ul>
+      <div class="socials-block">
+        <div class="title">Мы в соц.</div>
+        <ul class="socials-list">
+          <li><a href="#" target="_blank" class="vk">ВКонтакте</a></li>
+          <li><a href="#" target="_blank" class="facebook">Facebook</a></li>
+          <li><a href="#" target="_blank" class="instagram">Instagram</a></li>
+          <li><a href="#" target="_blank" class="telegram">Telegram</a></li>
+        </ul>
+      </div>
+      <div class="download-block">
+        <div class="title">Скачать приложение</div>
+        <a href="#" target="_blank" class="app-store">Загрузить в App Store</a>
+        <a href="#" target="_blank" class="google-play">Доступно в Google Play</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Регистрация -->
+  <div class="modal fade registrationModal" id="registrationModal" tabindex="-1" role="dialog" aria-labelledby="registrationLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title" id="registrationLabel">Регистрация</div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+              <g>
+                <g>
+                  <polygon class="st0" points="16,1.6 14.4,0 8,6.4 1.6,0 0,1.6 6.4,8 0,14.4 1.6,16 8,9.6 14.4,16 16,14.4 9.6,8    "/>
+                </g>
+              </g>
+            </svg>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="form">
+            <div class="form-group">
+              <input type="text" class="form-control input" placeholder="Имя">
+            </div>
+            <div class="form-group">
+              <input type="tel" class="form-control input" placeholder="Телефон">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control input" placeholder="E-mail">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control input" placeholder="Пароль">
+            </div>
+            <div class="form-group">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" checked="">
+                Запомнить меня
+              </label>
+            </div>
+            <div class="form-group">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" checked="">
+                Настоящим подтверждаю, что я ознакомлен и согласен с условиями политики конфиденциальности.<br><a href="#">Узнать больше</a>
+              </label>
+            </div>
+            <button class="btn btn-success">Зарегистрироваться</button>
+          </form>
+          <div class="links">
+            <a href="#loginModal" class="login-link">Вход</a> / <a href="#" class="forgot-link">Забыли пароль?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Вход -->
+  <div class="modal fade loginModal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title" id="loginModalLabel">Авторизация</div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+              <g>
+                <g>
+                  <polygon class="st0" points="16,1.6 14.4,0 8,6.4 1.6,0 0,1.6 6.4,8 0,14.4 1.6,16 8,9.6 14.4,16 16,14.4 9.6,8    "/>
+                </g>
+              </g>
+            </svg>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="form">
+            <div class="form-group">
+              <input type="text" class="form-control input" placeholder="Логин">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control input" placeholder="Пароль">
+            </div>
+            <div class="form-group">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" checked="">
+                Запомнить меня
+              </label>
+            </div>
+            <button class="btn btn-success">Войти</button>
+          </form>
+          <div class="links">
+            <a href="#registrationModal" class="registration-link">Регистрация</a> / <a href="#" class="forgot-link">Забыли пароль?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Выбор города -->
+  <div class="modal fade townModal" id="townModal" tabindex="-1" role="dialog" aria-labelledby="townModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title" id="townModalLabel">Выбор города</div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+              <g>
+                <g>
+                  <polygon class="st0" points="16,1.6 14.4,0 8,6.4 1.6,0 0,1.6 6.4,8 0,14.4 1.6,16 8,9.6 14.4,16 16,14.4 9.6,8    "/>
+                </g>
+              </g>
+            </svg>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="form">
+            <label class="label-search-input">
+              <span>Введите город поиска или выберите город из списка популярных.</span>
+              <input type="text" class="form-control search-input" placeholder="Поиск ...">
+            </label>
+            <button type="submit" class="btn btn-primary">Найти</button>
+          </form>
+          <ul class="town-list">
+            <li><a href="#">Москва</a></li>
+            <li><a href="#">Санкт-Петербург</a></li>
+            <li class="active"><a href="#">Балашиха</a></li>
+            <li><a href="#">Владивосток</a></li>
+            <li><a href="#">Волгоград</a></li>
+            <li><a href="#">Воронеж</a></li>
+            <li><a href="#">Екатеринбург</a></li>
+            <li><a href="#">Иркутск</a></li>
+            <li><a href="#">Казань</a></li>
+            <li><a href="#">Калуга</a></li>
+            <li><a href="#">Краснодар</a></li>
+            <li><a href="#">Красноярск</a></li>
+            <li><a href="#">Мытищи</a></li>
+            <li><a href="#">Нижний Новгород</a></li>
+            <li><a href="#">Новосибирск</a></li>
+            <li><a href="#">Омск</a></li>
+            <li><a href="#">Пермь</a></li>
+            <li><a href="#">Подольск</a></li>
+            <li><a href="#">Пятигорск</a></li>
+            <li><a href="#">Ростов-на-Дону</a></li>
+            <li><a href="#">Самара</a></li>
+            <li><a href="#">Саратов</a></li>
+            <li><a href="#">Сочи</a></li>
+            <li><a href="#">Сургут</a></li>
+            <li><a href="#">Томск</a></li>
+            <li><a href="#">Тюмень</a></li>
+            <li><a href="#">Уфа</a></li>
+            <li><a href="#">Хабаровск</a></li>
+            <li><a href="#">Челябинск</a></li>
+            <li><a href="#">Ярославль</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha256-5+02zu5UULQkO7w1GIr6vftCgMfFdZcAHeDtFnKZsBs=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.6/SmoothScroll.min.js" integrity="sha256-Yut1YAlvRzggjdRiTu+X56CcayNzkjwk3p34ZZL0WHk=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.polyfills.min.js" integrity="sha256-+Dm1njwBSVm4pvYvs4IgJ+RTCwX51sCGZNy3ZO0XZI4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" integrity="sha256-+4KHeBj6I8jAKAU8xXRMXXlH+sqCvVCoK5GAFkmb+2I=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha256-DHF4zGyjT7GOMPBwpeehwoey18z8uiz98G4PRu2lV0A=" crossorigin="anonymous"></script>
+  <script src="js/all.js"></script>
+</body>
+
+</html>
