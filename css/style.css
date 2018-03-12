@@ -2837,7 +2837,7 @@ figure
     box-shadow: 0 0 10px 0 rgba(4, 20, 36, .18);
 }
 
-.lk-main-container
+.lk-main-container, .profile-main-container
 {
     display: flex;
 
@@ -3075,6 +3075,7 @@ figure
 
     margin-bottom: -1px;
     padding: 10px 15px;
+    padding-top: 0;
 
     vertical-align: bottom;
 }
@@ -3276,6 +3277,12 @@ figure
     .statistics-and-actions .statistics-block > *
     {
         margin-bottom: 10px;
+    }
+    .profile-main-container {
+        flex-direction: column-reverse;
+    }
+    .profile-main-container .lk-main-area {
+        margin-bottom: 30px;
     }
 }
 
@@ -3672,5 +3679,11 @@ figure
     {
         padding-right: 15px;
         padding-left: 15px;
+    }
+    .profile-main-container {
+        flex-direction: column-reverse;
+    }
+    .profile-main-container .lk-main-area {
+        margin-bottom: 30px;
     }
 }
