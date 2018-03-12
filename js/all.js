@@ -38,22 +38,6 @@ $('.categories-section .container').slick({
   ]
 });
 
-// Кнопка "Вход" в модальном окне
-
-$('#registrationModal .login-link').on('click', function(event) {
-  event.preventDefault();
-  $('#registrationModal').modal('hide');
-  $('#loginModal').modal('show');
-})
-
-// Кнопка "Регистрация" в модальном окне
-
-$('#loginModal .registration-link').on('click', function(event) {
-  event.preventDefault();
-  $('#loginModal').modal('hide');
-  $('#registrationModal').modal('show');
-})
-
 // Панель логина
 
 $('.user-login-panel .photo').on('click', function(event) {
