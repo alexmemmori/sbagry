@@ -56,12 +56,12 @@
               <div class="photo"><img src="img/svg/user.svg" alt="Анатолий"></div>
             </div>
             <ul class="user-login-menu">
-              <li><a href="#">Профиль</a></li>
-              <li><a href="#">Мои объявления</a></li>
-              <li><a href="#">Торги</a></li>
-              <li><a href="#">Избранное</a></li>
-              <li><a href="#">Чаты</a></li>
-              <li><a href="#">Поддержка</a></li>
+              <li><a href="lk-profile.html">Профиль</a></li>
+              <li><a href="lk-procurement.html">Мои объявления</a></li>
+              <li><a href="lk-bargaining.html">Торги</a></li>
+              <li><a href="lk-favorites.html">Избранное</a></li>
+              <li><a href="lk-chat.html">Чаты</a></li>
+              <li><a href="lk-support.html">Поддержка</a></li>
               <li class="exit-link"><a href="#">Выйти</a></li>
             </ul>
           </div>
@@ -410,6 +410,40 @@
     </div>
   </footer>
 
+  <div class="view-modal-container container">
+    <div class="close-view-modal-btn"></div>
+    <a href="#viewModal" class="btn view-modal-btn" data-toggle="modal" data-target="#viewModal">
+      <span>Смотреть презентацию</span>
+      <span class="logo-svg"></span>
+      <span class="play-svg"></span>
+    </a>
+  </div>
+
+  <!-- Просмотр презентации -->
+  <div class="modal fade viewModal" id="viewModal" tabindex="-1" role="dialog" aria-labelledby="viewModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title" id="viewModalLabel">Презентация Sbagry</div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+              <g>
+                <g>
+                  <polygon class="st0" points="16,1.6 14.4,0 8,6.4 1.6,0 0,1.6 6.4,8 0,14.4 1.6,16 8,9.6 14.4,16 16,14.4 9.6,8    "/>
+                </g>
+              </g>
+            </svg>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="thumb-wrap">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-aDIov6AwIU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Выбор города -->
   <div class="modal fade townModal" id="townModal" tabindex="-1" role="dialog" aria-labelledby="townModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
@@ -432,7 +466,6 @@
               <span>Введите город поиска или выберите город из списка популярных.</span>
               <input type="text" class="form-control search-input" placeholder="Поиск ...">
             </label>
-            <button type="submit" class="btn btn-primary">Найти</button>
           </form>
           <ul class="town-list">
             <li><a href="#">Москва</a></li>

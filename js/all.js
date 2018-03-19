@@ -1,3 +1,5 @@
+// Маска ввода телефона
+
 jQuery(function($) {
   $('input[type="tel"]').mask('+7 999-999-99-99');
 });
@@ -43,4 +45,12 @@ $('.categories-section .container').slick({
 $('.user-login-panel .photo').on('click', function(event) {
   event.preventDefault();
   $('.user-login-panel').toggleClass('show');
+})
+
+// Кнопка "Закрыть" на нижней панели "Смотреть презентацию"
+
+$('.close-view-modal-btn').on('click', function(event) {
+  event.preventDefault();
+  $(this).parent().addClass('hidden');
+  // Советую дополнительно привязать скрытие кнопки по кукам
 })

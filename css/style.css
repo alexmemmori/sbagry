@@ -189,6 +189,10 @@ img
     box-shadow: 0 0 20px 0 rgba(32, 22, 0, .15);
 }
 
+.townModal .form .search-input {
+    padding-right: 20px;
+}
+
 .main-search-block .form .search-input::-webkit-input-placeholder,
 .townModal .form .search-input::-webkit-input-placeholder
 {
@@ -993,9 +997,7 @@ img
 
 
 
-.registrationModal .modal-title,
-.loginModal .modal-title,
-.townModal .modal-header
+.modal .modal-title
 {
     font-size: 18px;
     font-weight: 700;
@@ -1005,9 +1007,7 @@ img
     color: #212123;
 }
 
-.registrationModal .modal-header,
-.loginModal .modal-header,
-.townModal .modal-header
+.modal .modal-header
 {
     padding-top: 30px;
     padding-bottom: 10px;
@@ -1017,9 +1017,7 @@ img
     background: #fafafa;
 }
 
-.registrationModal .modal-header .close,
-.loginModal .modal-header .close,
-.townModal .modal-header .close
+.modal .modal-header .close
 {
     font-size: 0;
 
@@ -1035,9 +1033,7 @@ img
     outline: none;
 }
 
-.registrationModal .modal-header .close span,
-.loginModal .modal-header .close span,
-.townModal .modal-header .close span
+.modal .modal-header .close span
 {
     display: inline-block;
 
@@ -1068,9 +1064,7 @@ img
     fill: #319cd7;
 }
 
-.registrationModal .modal-header .close:hover span,
-.loginModal .modal-header .close:hover span,
-.townModal .modal-header .close:hover span
+.modal .modal-header .close:hover span
 {
     opacity: 1;
     background-position: 50% 100%;
@@ -1086,25 +1080,24 @@ img
     text-align: center;
 }
 
-.registrationModal .modal-body .form-group,
-.loginModal .modal-body .form-group
+.login-wrapper .form-group
 {
     margin-bottom: 10px;
 }
 
-.registrationModal .modal-body .btn-success,
-.loginModal .modal-body .btn-success
+.login-wrapper .btn-success
 {
     margin-top: 20px;
-    margin-bottom: 30px;
-    padding-right: 70px;
-    padding-left: 70px;
+    padding-left: 15px;
+    padding-right: 15px;
+    min-width: 190px;
+    max-width: 100%;
+    font-size: 17px;
 
     box-shadow: 0 0 10px 0 rgba(4, 20, 36, .18);
 }
 
-.registrationModal .modal-body .form-check-label,
-.loginModal .modal-body .form-check-label
+.login-wrapper .form-check-label
 {
     font-weight: 300;
 
@@ -1112,85 +1105,121 @@ img
 
     display: block;
 
-    padding-left: 20px;
-
     text-align: left;
 
     color: #212123;
+    font-size: 0;
 }
 
-.registrationModal .modal-body .form-check-input,
-.loginModal .modal-body .form-check-input
-{
-    position: absolute;
-
+.login-wrapper .form-check-label .check {
+    height: 15px;
+    width: 15px;
+    border: 1px solid #dcdcdc;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    border-radius: 3px;
+    background: #fff;
     margin-top: 1px;
-    margin-left: -20px;
 }
 
-.registrationModal .modal-body .input,
-.loginModal .modal-body .input
+.login-wrapper .form-check-label span {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+}
+
+.login-wrapper .form-check-label .check-title {
+    width: calc(100% - 25px);
+}
+
+.login-wrapper .form-check-input
+{
+    display: none;
+}
+
+.login-wrapper .form-check-input:checked + .check {
+    background: #319cd6 url("../img/check.png") 50% 50% no-repeat;
+    border-color: #319cd6;
+}  
+
+.login-wrapper .input
 {
     font-size: 16px;
     font-weight: 300;
 
     border-color: #dcdcdc;
     border-radius: 10px;
+    box-shadow: inset 0px 0px 5px 0px rgba(32, 22, 0, 0.2);
 }
 
-.registrationModal .modal-body .input:hover,
-.registrationModal .modal-body .input:focus,
-.loginModal .modal-body .input:hover,
-.loginModal .modal-body .input:focus
+.login-wrapper .input:hover, .login-wrapper .input:focus
 {
     border-color: #319cd6;
+    box-shadow: 0px 0px 10px 0px rgba(49, 156, 214, 0.4);
 }
 
-.registrationModal .modal-body .input::-webkit-input-placeholder,
-.loginModal .modal-body .input::-webkit-input-placeholder
+.login-wrapper .input::-webkit-input-placeholder
 {
     color: #c8c8c8;
 }
 
-.registrationModal .modal-body .input:-ms-input-placeholder,
-.loginModal .modal-body .input:-ms-input-placeholder
+.login-wrapper .input:-ms-input-placeholder
 {
     color: #c8c8c8;
 }
 
-.registrationModal .modal-body .input::-ms-input-placeholder,
-.loginModal .modal-body .input::-ms-input-placeholder
+.login-wrapper .input::-ms-input-placeholder
 {
     color: #c8c8c8;
 }
 
-.registrationModal .modal-body .input::placeholder,
-.loginModal .modal-body .input::placeholder
+.login-wrapper .input::placeholder
 {
     color: #c8c8c8;
 }
 
-.registrationModal .modal-body .links,
-.loginModal .modal-body .links
+.login-wrapper .links
 {
     font-weight: 300;
+    margin-top: 30px;
 }
 
-.registrationModal .modal-body .links a,
-.registrationModal .modal-body .form-check-label a,
-.loginModal .modal-body .links a,
-.loginModal .modal-body .form-check-label a
+.login-wrapper .links a,
+.login-wrapper .form-check-label a
 {
     text-decoration: underline;
 }
 
-.registrationModal .modal-body .links a:hover,
-.registrationModal .modal-body .form-check-label a:hover,
-.loginModal .modal-body .links a:hover,
-.loginModal .modal-body .form-check-label a:hover
+.login-wrapper .links a:hover,
+.login-wrapper .form-check-label a:hover
 {
     text-decoration: none;
 }
+.login-wrapper .text-message {
+    color: #212123;
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+.login-wrapper .push-and-sms {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login-wrapper .push-and-sms .btn {
+    margin: 0;
+    width: 48%;
+    padding: 0;
+    min-width: auto;
+    max-width: auto;
+    padding: 10px 15px;
+}
+
 .townModal .modal-header
 {
     padding-left: 95px;
@@ -4035,6 +4064,112 @@ figure
     border-bottom-left-radius: 5px;
 }
 
+.view-modal-container {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    text-align: right;
+}
+
+.view-modal-btn {
+  box-shadow: 0px 0px 10px 0px rgba(4, 20, 36, 0.18);
+  border-radius: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 22px;
+  background: #1ec77b;
+  color: #fff;
+  padding: 0;
+  border: none;
+    padding: 12px 15px;
+}
+
+.view-modal-btn span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.view-modal-btn .logo-svg {
+    background: url("../img/svg/view-modal-btn-logo.svg") 50% 50% no-repeat;
+    width: 95px;
+    height: 40px;
+    margin-left: 15px;
+}
+
+.view-modal-btn .play-svg {
+    background: url("../img/svg/view-modal-btn-play.svg") 50% 50% no-repeat;
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+}
+
+.view-modal-btn:hover {
+    color: #fff;
+    background: #3de571;
+}
+
+.view-modal-btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.close-view-modal-btn {
+    width: 20px;
+    height: 20px;
+    background: url("../img/svg/close-view-modal-btn.svg") 50% 50% no-repeat;
+    cursor: pointer;
+    position: absolute;
+    bottom: 44px;
+    right: -15px;
+    transition: all 0.3s ease;
+}
+
+.close-view-modal-btn:hover {
+    opacity: 0.8;
+}
+
+.thumb-wrap {
+    position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.thumb-wrap iframe {
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.login-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.login-area .login-wrapper {
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 0px 10px 0px rgba(32, 22, 0, 0.15);
+    width: 390px;
+    padding: 35px 70px;
+    text-align: center;
+}
+
+.login-area .login-title {
+    font-size: 18px;
+    color: #212123;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    font-weight: 700;
+}
+
 @media (min-width: 991px) and (max-width: 1199px)
 {
     .card-items-section,
@@ -4699,5 +4834,27 @@ figure
     .lk-procurement-area .town-and-counter .town
     {
         font-size: 10px;
+    }
+    .login-area .login-wrapper {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .view-modal-btn {
+        font-size: 16px;
+    }
+    .view-modal-btn .play-svg {
+        width: 30px;
+        height: 30px;
+    }
+    .view-modal-btn .logo-svg {
+        display: none;
+    }
+    .view-modal-container {
+        text-align: center;
+    }
+    .close-view-modal-btn {
+        right: 0;
+        bottom: 35px;
     }
 }

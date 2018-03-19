@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha256-UK1EiopXIL+KVhfbFa8xrmAWPeBjMVdvYMYkTAEv/HI=" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css">
-  <title>Страница не найдена | Сбагри</title>
+  <title>Восстановление пароля | Сбагри</title>
 </head>
 
 <body>
@@ -34,7 +34,7 @@
           <img src="img/svg/logo.svg" alt="Сбагри">
         </a>
         <div class="links">
-          <a class="active">Объявления</a>
+          <a href="ads.html">Объявления</a>
           <a href="tenders.html">Тендеры</a>
         </div>
       </div>
@@ -45,93 +45,22 @@
       </div>
     </div>
   </header>
-  <div class="categories-section">
-    <div class="container">
-      <a href="#" class="item">
-        <span class="wrapper">
-          <img src="img/categories/cat-1.png" alt="Транспорт">
-        </span>
-        <span class="title">Транспорт</span>
-      </a>
-      <a href="#" class="item">
-        <span class="wrapper">
-          <img src="img/categories/cat-2.png" alt="Недвижимость">
-        </span>
-        <span class="title">Недвижимость</span>
-      </a>
-      <a href="#" class="item">
-        <span class="wrapper">
-          <img src="img/categories/cat-3.png" alt="Строительство и ремонт">
-        </span>
-        <span class="title">Строительство и ремонт</span>
-      </a>
-      <a href="#" class="item">
-        <span class="wrapper">
-          <img src="img/categories/cat-4.png" alt="Дом, дача, сад">
-        </span>
-        <span class="title">Дом, дача, сад</span>
-      </a>
-      <a href="#" class="item">
-        <span class="wrapper">
-          <img src="img/categories/cat-5.png" alt="Услуги">
-        </span>
-        <span class="title">Услуги</span>
-      </a>
-      <a href="#" class="item">
-        <span class="wrapper">
-          <img src="img/categories/cat-6.png" alt="Товары повседневного пользования">
-        </span>
-        <span class="title">Товары повседневного пользования</span>
-      </a>
-      <a href="#" class="item">
-        <span class="wrapper">
-          <img src="img/categories/cat-7.png" alt="Бытовая техника и электроника">
-        </span>
-        <span class="title">Бытовая техника и электроника</span>
-      </a>
-      <a href="#" class="item">
-        <span class="wrapper">
-          <img src="img/categories/cat-8.png" alt="Оборудование для бизнеса и производства">
-        </span>
-        <span class="title">Оборудование для бизнеса и производства</span>
-      </a>
-      <a href="#" class="item">
-        <span class="wrapper">
-          <img src="img/categories/cat-9.png" alt="Красота, здоровье, спорт">
-        </span>
-        <span class="title">Красота, здоровье, спорт</span>
-      </a>
-      <!-- ниже категории для демонстрации слайдера -->
-      <a href="#" class="item">
-        <span class="wrapper">
-          <img src="img/categories/cat-1.png" alt="Транспорт">
-        </span>
-        <span class="title">Транспорт</span>
-      </a>
-      <a href="#" class="item">
-        <span class="wrapper">
-          <img src="img/categories/cat-2.png" alt="Недвижимость">
-        </span>
-        <span class="title">Недвижимость</span>
-      </a>
-    </div>
-  </div>
 
-  <div class="main-search-block container">
-    <form class="form">
-      <input type="text" class="form-control search-input" placeholder="Поиск ...">
-      <button type="submit" class="btn btn-primary">Найти</button>
-    </form>
-  </div>
   <main class="main-area-section">
     <div class="container">
-      <div class="section-404">
-        <div class="logo-and-title">
-          <img src="img/logo-404.png" alt="Сбагри - Ошибка 404">
-          <h1 class="title">Ошибка 404</h1>
+      <div class="login-area">
+        <div class="login-wrapper">
+          <div class="login-title">Код подтверждения</div>
+          <form class="form">
+            <div class="form-group">
+              <input type="text" class="form-control input" placeholder="Введите код из СМС">
+            </div>
+            <div class="text-message">
+              Чтобы подтвердить Ваш номер телефона - мы отправили Вам код в СМС. Введите полученный код в данное поле.
+            </div>
+            <button class="btn btn-success" type="submit">Подтвердить</button>
+          </form>
         </div>
-        <p class="description">Упс, похоже такой страницы не существует. Возможно она устарела, удалена или был введен не верный адрес в адресной строке.</p>
-        <a href="/" class="btn btn-success">Вернуться на главную</a>
       </div>
     </div>
   </main>
