@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha256-UK1EiopXIL+KVhfbFa8xrmAWPeBjMVdvYMYkTAEv/HI=" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css">
-  <title>ЛК Мои объявления | Сбагри</title>
+  <title>ЛК Мои объявления Список Завершенные | Сбагри</title>
 </head>
 
 <body>
@@ -279,296 +279,53 @@
       </aside>
       <div class="lk-main-area">
         <ul class="lk-main-links">
-          <li class="active">
-            <a>Активные</a> <span class="counter">5</span>
-          </li>
           <li>
-            <a href="lk-my-products-end.html">Завершенные</a> <span class="counter">10</span>
+            <a href="lk-my-products.html">Активные</a> <span class="counter">5</span>
+          </li>
+          <li class="active">
+            <a>Завершенные</a> <span class="counter">10</span>
           </li>
         </ul>
         <div class="lk-main-view-icons">
-          <a class="tile active">Плиткой</a>
-          <a class="list" href="lk-my-products-list.html">Списком</a>
+          <a class="tile" href="lk-my-products.html">Плиткой</a>
+          <a class="list active">Списком</a>
         </div>
         <form action="#">
-          <div class="lk-products-wrapper">
-            <div class="card card-download-block">
-              <a href="lk-new-add.html" class="link-new-add">Создать новое объявление</a>
-              <a href="#downloadExcelModal" class="link-download-excel" data-toggle="modal" data-target="#downloadExcelModal">Массовая загрузка Excel</a>
-            </div>
-            <article class="card top">
-              <a href="#" class="img-link">
-                <img src="img/content/jnero.jpg" alt="Новые туфли oskar j. nero">
-              </a>
-              <div class="wrapper">
-                <div class="price">4 000 руб.</div>
-                <h2 class="title"><a href="#">Новые туфли oskar j. nero</a></h2>
-                <div class="category-and-time">
-                  <div class="category"><a href="#">Обувь</a></div>
-                  <time class="time" datetime="2018-02-05T13:36">13:36</time>
+          <div class="lk-products-list-wrapper">
+            <div class="card-list-table">
+              <header class="card-list-table-header">
+                <div class="checkbox-col">
+                  <input type="checkbox">
                 </div>
-                <div class="btn-and-menu">
-                  <a href="lk-my-products-top.html" class="btn btn-primary">Продать быстрее</a>
-                  <div class="edit-menu">
-                    <a href="#statiscticProductModal" class="views" data-toggle="modal" data-target="#statiscticProductModal">
-                      <svg version="1.1" baseProfile="tiny" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 10" overflow="scroll" xml:space="preserve">
-                      <g>
-                        <path d="M13.9,2.9C12,1,9.6,0,7,0l0,0l0,0C4.4,0,2,1,0.1,2.9C0,3,0,3.3,0.1,3.5c0.1,0.1,0.2,0.1,0.3,0.1s0.2,0,0.3-0.1
-                          c1.7-1.7,4-2.6,6.3-2.6s4.6,0.9,6.3,2.6c0.2,0.2,0.5,0.2,0.6,0C14,3.3,14,3,13.9,2.9z"/>
-                        <path d="M7,3.3c-3,0-5.3,2.1-6.2,3C0.7,6.5,0.7,6.8,0.8,7C1.7,7.9,4,10,7,10s5.3-2.1,6.2-3c0.2-0.2,0.2-0.4,0-0.6
-                          C12.3,5.4,10,3.3,7,3.3z M4.2,4.9C3.9,5.4,3.7,6,3.7,6.7c0,0.6,0.1,1.2,0.4,1.7c-1-0.5-1.8-1.2-2.3-1.7C2.3,6.1,3.1,5.4,4.2,4.9z
-                           M5.9,9C5.1,8.5,4.6,7.7,4.6,6.7c0-1.1,0.6-2.1,1.6-2.4c0.3,0,0.5-0.1,0.8-0.1c0.2,0,0.4,0,0.6,0c1,0.3,1.7,1.3,1.7,2.5
-                          c0,1-0.5,1.9-1.3,2.3C7.6,9.1,7.3,9.1,7,9.1C6.6,9.1,6.2,9.1,5.9,9z M9.7,8.5C10,8,10.1,7.4,10.1,6.7S9.9,5.4,9.6,4.8
-                          c1.1,0.5,2,1.3,2.6,1.8C11.7,7.2,10.8,7.9,9.7,8.5z"/>
-                        <path d="M8,6.7c-0.6,0-1.1-0.5-1.1-1.1c-0.6,0-1.1,0.5-1.1,1.1s0.5,1.1,1.1,1.1C7.5,7.8,8,7.3,8,6.7z"/>
-                      </g>
-                      </svg>
-                      <span>Просмотры</span>
-                    </a>
-                    <div class="edit">
-                      <svg version="1.1" baseProfile="tiny" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 14" overflow="scroll" xml:space="preserve">
-                      <g>
-                        <g>
-                          <path fill="#1D1D1B" d="M13.7,0.3C13.4,0.1,13.1,0,12.8,0c-0.3,0-0.6,0.1-0.8,0.4l-0.5,0.5c0,0,0,0,0,0l-7,7c0,0,0,0.1-0.1,0.1
-                            C4.4,8,4.4,8,4.4,8L3.6,9.7c-0.1,0.2,0,0.4,0.1,0.5c0.1,0.1,0.2,0.1,0.3,0.1c0.1,0,0.1,0,0.2,0l1.7-0.6c0,0,0.1,0,0.1-0.1
-                            c0,0,0.1,0,0.1-0.1l7-7c0,0,0,0,0,0L13.6,2C14.1,1.5,14.1,0.8,13.7,0.3z M5.8,8.6L5.4,8.2l6.4-6.4l0.4,0.4
-                            C12.2,2.2,5.8,8.6,5.8,8.6z M13,1.4l-0.2,0.2l-0.4-0.4L12.6,1c0.1-0.1,0.1-0.1,0.2-0.1c0.1,0,0.1,0,0.2,0.1
-                            C13.1,1.1,13.1,1.3,13,1.4z"/>
-                          <path fill="#1D1D1B" d="M12.8,4.9c-0.2,0-0.4,0.2-0.4,0.4v7.4c0,0.2-0.2,0.4-0.4,0.4H1.3c-0.2,0-0.4-0.2-0.4-0.4V2.1
-                            c0-0.2,0.2-0.4,0.4-0.4h7.3c0.2,0,0.4-0.2,0.4-0.4S8.9,0.8,8.6,0.8H1.3C0.6,0.8,0,1.4,0,2.1v10.5C0,13.4,0.6,14,1.3,14h10.6
-                            c0.7,0,1.3-0.6,1.3-1.3V5.3C13.2,5.1,13,4.9,12.8,4.9z"/>
-                        </g>
-                      </g>
-                      </svg>
-                      <span>Редактировать</span>
-                    </div>
-                    <div class="remove">
-                      <svg version="1.1" baseProfile="tiny" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 14" overflow="scroll" xml:space="preserve">
-                      <g>
-                        <g>
-                          <path d="M13.5,13.5V4.4c0-0.1-0.1-0.3-0.2-0.4L9.1,0.1C9,0.1,8.9,0,8.8,0H2.2C2,0,1.7,0.2,1.7,0.5v5.8c0,0.3,0.2,0.5,0.5,0.5
-                            s0.5-0.2,0.5-0.5V1h5.3v4c0,0.3,0.2,0.5,0.5,0.5h3.8c0,0,0.1,0,0.1,0V13H2.8v-2.1c0-0.3-0.2-0.5-0.5-0.5s-0.5,0.2-0.5,0.5v2.6
-                            C1.7,13.8,2,14,2.2,14H13C13.3,14,13.5,13.8,13.5,13.5z M9.1,1.6l3.2,2.9H9.1V1.6z"/>
-                          <path d="M0.5,8.5C0.5,8.8,0.7,9,1,9h5.5l-1.7,1.5c-0.2,0.2-0.2,0.5,0,0.7c0.1,0.1,0.2,0.2,0.4,0.2c0.1,0,0.2,0,0.3-0.1l2.7-2.4
-                            c0.1-0.1,0.2-0.2,0.2-0.4c0-0.1-0.1-0.3-0.2-0.4L5.5,5.7c-0.2-0.2-0.5-0.2-0.7,0C4.6,6,4.6,6.3,4.8,6.5L6.5,8H1
-                            C0.7,8,0.5,8.2,0.5,8.5z"/>
-                        </g>
-                      </g>
-                      </svg>
-                      <span>Снять с публикации</span>
-                    </div>
-                    <div class="delete">
-                      <svg version="1.1" baseProfile="tiny" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 14" overflow="scroll" xml:space="preserve">
-                        <g>
-                          <g>
-                            <path d="M11.6,1.6H9.7V0.4C9.7,0.2,9.5,0,9.3,0c0,0,0,0,0,0c0,0,0,0,0,0H4.8h0h0C4.5,0,4.3,0.2,4.3,0.4v1.2H2.4c-0.5,0-1,0.4-1,1
-                              v0.7v0.9h0.8v8.9c0,0.5,0.4,0.9,0.9,0.9h7.5c0.5,0,1-0.4,1-0.9V4.2h0.8V3.3V2.6C12.5,2.1,12.1,1.6,11.6,1.6z M5.2,0.9h3.7v0.8H5.2
-                              V0.9z M10.8,13.1C10.8,13.1,10.8,13.1,10.8,13.1l-7.6,0.1c-0.1,0-0.1,0-0.1-0.1V4.2h7.7V13.1z M11.7,3.3H2.3V2.6
-                              c0-0.1,0-0.1,0.1-0.1h9.2c0.1,0,0.1,0,0.1,0.1L11.7,3.3L11.7,3.3z"></path>
-                            <rect x="8.6" y="5.2" width="0.9" height="7.2"></rect>
-                            <rect x="6.6" y="5.2" width="0.9" height="7.2"></rect>
-                            <rect x="4.6" y="5.2" width="0.9" height="7.2"></rect>
-                          </g>
-                        </g>
-                      </svg>
-                      <span>Удалить</span>
-                    </div>
-                    <div class="menu-icon">Меню</div>
+                <div class="name-col">Наименование</div>
+                <div class="days-col">Осталось дней</div>
+                <div class="price-col">Цена</div>
+                <div class="views-col">Статистика просмотров (Всего)</div>
+                <div class="ups-col">Ускорители</div>
+                <div class="photo-col">Фото</div>
+              </header>
+              <div class="card-list-table-body">
+                <div class="card-list-item">
+                  <div class="checkbox-col">
+                    <input type="checkbox" checked="">
                   </div>
-                </div>
-              </div>
-              
-              <label class="checkbox">
-                <input type="checkbox" checked="">
-                <span></span>
-              </label>
-            </article>
-            <article class="card top">
-              <a href="#" class="img-link">
-                <img src="img/content/adidas.jpg" alt="Adidas yeezy 750 light">
-              </a>
-              <div class="wrapper">
-                <div class="price">2 500 руб.</div>
-                <h2 class="title"><a href="#">Adidas yeezy 750 light</a></h2>
-                <div class="category-and-time">
-                  <div class="category"><a href="#">Обувь</a></div>
-                  <time class="time" datetime="2018-02-05T13:36">13:36</time>
-                </div>
-                <div class="btn-and-menu">
-                  <a href="lk-my-products-top.html" class="btn btn-primary">Продать быстрее</a>
-                  <div class="edit-menu">
-                    <a href="#statiscticProductModal" class="views" data-toggle="modal" data-target="#statiscticProductModal">
-                      <svg version="1.1" baseProfile="tiny" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 10" overflow="scroll" xml:space="preserve">
-                      <g>
-                        <path d="M13.9,2.9C12,1,9.6,0,7,0l0,0l0,0C4.4,0,2,1,0.1,2.9C0,3,0,3.3,0.1,3.5c0.1,0.1,0.2,0.1,0.3,0.1s0.2,0,0.3-0.1
-                          c1.7-1.7,4-2.6,6.3-2.6s4.6,0.9,6.3,2.6c0.2,0.2,0.5,0.2,0.6,0C14,3.3,14,3,13.9,2.9z"/>
-                        <path d="M7,3.3c-3,0-5.3,2.1-6.2,3C0.7,6.5,0.7,6.8,0.8,7C1.7,7.9,4,10,7,10s5.3-2.1,6.2-3c0.2-0.2,0.2-0.4,0-0.6
-                          C12.3,5.4,10,3.3,7,3.3z M4.2,4.9C3.9,5.4,3.7,6,3.7,6.7c0,0.6,0.1,1.2,0.4,1.7c-1-0.5-1.8-1.2-2.3-1.7C2.3,6.1,3.1,5.4,4.2,4.9z
-                           M5.9,9C5.1,8.5,4.6,7.7,4.6,6.7c0-1.1,0.6-2.1,1.6-2.4c0.3,0,0.5-0.1,0.8-0.1c0.2,0,0.4,0,0.6,0c1,0.3,1.7,1.3,1.7,2.5
-                          c0,1-0.5,1.9-1.3,2.3C7.6,9.1,7.3,9.1,7,9.1C6.6,9.1,6.2,9.1,5.9,9z M9.7,8.5C10,8,10.1,7.4,10.1,6.7S9.9,5.4,9.6,4.8
-                          c1.1,0.5,2,1.3,2.6,1.8C11.7,7.2,10.8,7.9,9.7,8.5z"/>
-                        <path d="M8,6.7c-0.6,0-1.1-0.5-1.1-1.1c-0.6,0-1.1,0.5-1.1,1.1s0.5,1.1,1.1,1.1C7.5,7.8,8,7.3,8,6.7z"/>
-                      </g>
-                      </svg>
-                      <span>Просмотры</span>
-                    </a>
-                    <div class="edit">
-                      <svg version="1.1" baseProfile="tiny" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 14" overflow="scroll" xml:space="preserve">
-                      <g>
-                        <g>
-                          <path fill="#1D1D1B" d="M13.7,0.3C13.4,0.1,13.1,0,12.8,0c-0.3,0-0.6,0.1-0.8,0.4l-0.5,0.5c0,0,0,0,0,0l-7,7c0,0,0,0.1-0.1,0.1
-                            C4.4,8,4.4,8,4.4,8L3.6,9.7c-0.1,0.2,0,0.4,0.1,0.5c0.1,0.1,0.2,0.1,0.3,0.1c0.1,0,0.1,0,0.2,0l1.7-0.6c0,0,0.1,0,0.1-0.1
-                            c0,0,0.1,0,0.1-0.1l7-7c0,0,0,0,0,0L13.6,2C14.1,1.5,14.1,0.8,13.7,0.3z M5.8,8.6L5.4,8.2l6.4-6.4l0.4,0.4
-                            C12.2,2.2,5.8,8.6,5.8,8.6z M13,1.4l-0.2,0.2l-0.4-0.4L12.6,1c0.1-0.1,0.1-0.1,0.2-0.1c0.1,0,0.1,0,0.2,0.1
-                            C13.1,1.1,13.1,1.3,13,1.4z"/>
-                          <path fill="#1D1D1B" d="M12.8,4.9c-0.2,0-0.4,0.2-0.4,0.4v7.4c0,0.2-0.2,0.4-0.4,0.4H1.3c-0.2,0-0.4-0.2-0.4-0.4V2.1
-                            c0-0.2,0.2-0.4,0.4-0.4h7.3c0.2,0,0.4-0.2,0.4-0.4S8.9,0.8,8.6,0.8H1.3C0.6,0.8,0,1.4,0,2.1v10.5C0,13.4,0.6,14,1.3,14h10.6
-                            c0.7,0,1.3-0.6,1.3-1.3V5.3C13.2,5.1,13,4.9,12.8,4.9z"/>
-                        </g>
-                      </g>
-                      </svg>
-                      <span>Редактировать</span>
+                  <div class="name-col"><a href="#">Куртка Анорак dc camo. Новая Продажа одежды Магазин ...</a></div>
+                  <div class="days-col">
+                    <div class="progressbar">
+                      <span></span>0
                     </div>
-                    <div class="remove">
-                      <svg version="1.1" baseProfile="tiny" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 14" overflow="scroll" xml:space="preserve">
-                      <g>
-                        <g>
-                          <path d="M13.5,13.5V4.4c0-0.1-0.1-0.3-0.2-0.4L9.1,0.1C9,0.1,8.9,0,8.8,0H2.2C2,0,1.7,0.2,1.7,0.5v5.8c0,0.3,0.2,0.5,0.5,0.5
-                            s0.5-0.2,0.5-0.5V1h5.3v4c0,0.3,0.2,0.5,0.5,0.5h3.8c0,0,0.1,0,0.1,0V13H2.8v-2.1c0-0.3-0.2-0.5-0.5-0.5s-0.5,0.2-0.5,0.5v2.6
-                            C1.7,13.8,2,14,2.2,14H13C13.3,14,13.5,13.8,13.5,13.5z M9.1,1.6l3.2,2.9H9.1V1.6z"/>
-                          <path d="M0.5,8.5C0.5,8.8,0.7,9,1,9h5.5l-1.7,1.5c-0.2,0.2-0.2,0.5,0,0.7c0.1,0.1,0.2,0.2,0.4,0.2c0.1,0,0.2,0,0.3-0.1l2.7-2.4
-                            c0.1-0.1,0.2-0.2,0.2-0.4c0-0.1-0.1-0.3-0.2-0.4L5.5,5.7c-0.2-0.2-0.5-0.2-0.7,0C4.6,6,4.6,6.3,4.8,6.5L6.5,8H1
-                            C0.7,8,0.5,8.2,0.5,8.5z"/>
-                        </g>
-                      </g>
-                      </svg>
-                      <span>Снять с публикации</span>
-                    </div>
-                    <div class="delete">
-                      <svg version="1.1" baseProfile="tiny" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 14" overflow="scroll" xml:space="preserve">
-                        <g>
-                          <g>
-                            <path d="M11.6,1.6H9.7V0.4C9.7,0.2,9.5,0,9.3,0c0,0,0,0,0,0c0,0,0,0,0,0H4.8h0h0C4.5,0,4.3,0.2,4.3,0.4v1.2H2.4c-0.5,0-1,0.4-1,1
-                              v0.7v0.9h0.8v8.9c0,0.5,0.4,0.9,0.9,0.9h7.5c0.5,0,1-0.4,1-0.9V4.2h0.8V3.3V2.6C12.5,2.1,12.1,1.6,11.6,1.6z M5.2,0.9h3.7v0.8H5.2
-                              V0.9z M10.8,13.1C10.8,13.1,10.8,13.1,10.8,13.1l-7.6,0.1c-0.1,0-0.1,0-0.1-0.1V4.2h7.7V13.1z M11.7,3.3H2.3V2.6
-                              c0-0.1,0-0.1,0.1-0.1h9.2c0.1,0,0.1,0,0.1,0.1L11.7,3.3L11.7,3.3z"></path>
-                            <rect x="8.6" y="5.2" width="0.9" height="7.2"></rect>
-                            <rect x="6.6" y="5.2" width="0.9" height="7.2"></rect>
-                            <rect x="4.6" y="5.2" width="0.9" height="7.2"></rect>
-                          </g>
-                        </g>
-                      </svg>
-                      <span>Удалить</span>
-                    </div>
-                    <div class="menu-icon">Меню</div>
                   </div>
-                </div>
-              </div>
-              <label class="checkbox">
-                <input type="checkbox" checked="">
-                <span></span>
-              </label>
-            </article>
-            <article class="card top">
-              <a href="#" class="img-link">
-                <img src="img/content/kors.jpg" alt="Сумка michael kors">
-              </a>
-              <div class="wrapper">
-                <div class="price">3 000 руб.</div>
-                <h2 class="title"><a href="#">Сумка michael kors</a></h2>
-                <div class="category-and-time">
-                  <div class="category"><a href="#">Кожалантерея</a></div>
-                  <time class="time" datetime="2018-02-05T13:36">13:36</time>
-                </div>
-                <div class="btn-and-menu">
-                  <a href="lk-my-products-top.html" class="btn btn-primary">Продать быстрее</a>
-                  <div class="edit-menu">
-                    <a href="#statiscticProductModal" class="views" data-toggle="modal" data-target="#statiscticProductModal">
-                      <svg version="1.1" baseProfile="tiny" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 10" overflow="scroll" xml:space="preserve">
-                      <g>
-                        <path d="M13.9,2.9C12,1,9.6,0,7,0l0,0l0,0C4.4,0,2,1,0.1,2.9C0,3,0,3.3,0.1,3.5c0.1,0.1,0.2,0.1,0.3,0.1s0.2,0,0.3-0.1
-                          c1.7-1.7,4-2.6,6.3-2.6s4.6,0.9,6.3,2.6c0.2,0.2,0.5,0.2,0.6,0C14,3.3,14,3,13.9,2.9z"/>
-                        <path d="M7,3.3c-3,0-5.3,2.1-6.2,3C0.7,6.5,0.7,6.8,0.8,7C1.7,7.9,4,10,7,10s5.3-2.1,6.2-3c0.2-0.2,0.2-0.4,0-0.6
-                          C12.3,5.4,10,3.3,7,3.3z M4.2,4.9C3.9,5.4,3.7,6,3.7,6.7c0,0.6,0.1,1.2,0.4,1.7c-1-0.5-1.8-1.2-2.3-1.7C2.3,6.1,3.1,5.4,4.2,4.9z
-                           M5.9,9C5.1,8.5,4.6,7.7,4.6,6.7c0-1.1,0.6-2.1,1.6-2.4c0.3,0,0.5-0.1,0.8-0.1c0.2,0,0.4,0,0.6,0c1,0.3,1.7,1.3,1.7,2.5
-                          c0,1-0.5,1.9-1.3,2.3C7.6,9.1,7.3,9.1,7,9.1C6.6,9.1,6.2,9.1,5.9,9z M9.7,8.5C10,8,10.1,7.4,10.1,6.7S9.9,5.4,9.6,4.8
-                          c1.1,0.5,2,1.3,2.6,1.8C11.7,7.2,10.8,7.9,9.7,8.5z"/>
-                        <path d="M8,6.7c-0.6,0-1.1-0.5-1.1-1.1c-0.6,0-1.1,0.5-1.1,1.1s0.5,1.1,1.1,1.1C7.5,7.8,8,7.3,8,6.7z"/>
-                      </g>
-                      </svg>
-                      <span>Просмотры</span>
-                    </a>
-                    <div class="edit">
-                      <svg version="1.1" baseProfile="tiny" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 14" overflow="scroll" xml:space="preserve">
-                      <g>
-                        <g>
-                          <path fill="#1D1D1B" d="M13.7,0.3C13.4,0.1,13.1,0,12.8,0c-0.3,0-0.6,0.1-0.8,0.4l-0.5,0.5c0,0,0,0,0,0l-7,7c0,0,0,0.1-0.1,0.1
-                            C4.4,8,4.4,8,4.4,8L3.6,9.7c-0.1,0.2,0,0.4,0.1,0.5c0.1,0.1,0.2,0.1,0.3,0.1c0.1,0,0.1,0,0.2,0l1.7-0.6c0,0,0.1,0,0.1-0.1
-                            c0,0,0.1,0,0.1-0.1l7-7c0,0,0,0,0,0L13.6,2C14.1,1.5,14.1,0.8,13.7,0.3z M5.8,8.6L5.4,8.2l6.4-6.4l0.4,0.4
-                            C12.2,2.2,5.8,8.6,5.8,8.6z M13,1.4l-0.2,0.2l-0.4-0.4L12.6,1c0.1-0.1,0.1-0.1,0.2-0.1c0.1,0,0.1,0,0.2,0.1
-                            C13.1,1.1,13.1,1.3,13,1.4z"/>
-                          <path fill="#1D1D1B" d="M12.8,4.9c-0.2,0-0.4,0.2-0.4,0.4v7.4c0,0.2-0.2,0.4-0.4,0.4H1.3c-0.2,0-0.4-0.2-0.4-0.4V2.1
-                            c0-0.2,0.2-0.4,0.4-0.4h7.3c0.2,0,0.4-0.2,0.4-0.4S8.9,0.8,8.6,0.8H1.3C0.6,0.8,0,1.4,0,2.1v10.5C0,13.4,0.6,14,1.3,14h10.6
-                            c0.7,0,1.3-0.6,1.3-1.3V5.3C13.2,5.1,13,4.9,12.8,4.9z"/>
-                        </g>
-                      </g>
-                      </svg>
-                      <span>Редактировать</span>
-                    </div>
-                    <div class="remove">
-                      <svg version="1.1" baseProfile="tiny" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 14" overflow="scroll" xml:space="preserve">
-                      <g>
-                        <g>
-                          <path d="M13.5,13.5V4.4c0-0.1-0.1-0.3-0.2-0.4L9.1,0.1C9,0.1,8.9,0,8.8,0H2.2C2,0,1.7,0.2,1.7,0.5v5.8c0,0.3,0.2,0.5,0.5,0.5
-                            s0.5-0.2,0.5-0.5V1h5.3v4c0,0.3,0.2,0.5,0.5,0.5h3.8c0,0,0.1,0,0.1,0V13H2.8v-2.1c0-0.3-0.2-0.5-0.5-0.5s-0.5,0.2-0.5,0.5v2.6
-                            C1.7,13.8,2,14,2.2,14H13C13.3,14,13.5,13.8,13.5,13.5z M9.1,1.6l3.2,2.9H9.1V1.6z"/>
-                          <path d="M0.5,8.5C0.5,8.8,0.7,9,1,9h5.5l-1.7,1.5c-0.2,0.2-0.2,0.5,0,0.7c0.1,0.1,0.2,0.2,0.4,0.2c0.1,0,0.2,0,0.3-0.1l2.7-2.4
-                            c0.1-0.1,0.2-0.2,0.2-0.4c0-0.1-0.1-0.3-0.2-0.4L5.5,5.7c-0.2-0.2-0.5-0.2-0.7,0C4.6,6,4.6,6.3,4.8,6.5L6.5,8H1
-                            C0.7,8,0.5,8.2,0.5,8.5z"/>
-                        </g>
-                      </g>
-                      </svg>
-                      <span>Снять с публикации</span>
-                    </div>
-                    <div class="delete">
-                      <svg version="1.1" baseProfile="tiny" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 14" overflow="scroll" xml:space="preserve">
-                        <g>
-                          <g>
-                            <path d="M11.6,1.6H9.7V0.4C9.7,0.2,9.5,0,9.3,0c0,0,0,0,0,0c0,0,0,0,0,0H4.8h0h0C4.5,0,4.3,0.2,4.3,0.4v1.2H2.4c-0.5,0-1,0.4-1,1
-                              v0.7v0.9h0.8v8.9c0,0.5,0.4,0.9,0.9,0.9h7.5c0.5,0,1-0.4,1-0.9V4.2h0.8V3.3V2.6C12.5,2.1,12.1,1.6,11.6,1.6z M5.2,0.9h3.7v0.8H5.2
-                              V0.9z M10.8,13.1C10.8,13.1,10.8,13.1,10.8,13.1l-7.6,0.1c-0.1,0-0.1,0-0.1-0.1V4.2h7.7V13.1z M11.7,3.3H2.3V2.6
-                              c0-0.1,0-0.1,0.1-0.1h9.2c0.1,0,0.1,0,0.1,0.1L11.7,3.3L11.7,3.3z"></path>
-                            <rect x="8.6" y="5.2" width="0.9" height="7.2"></rect>
-                            <rect x="6.6" y="5.2" width="0.9" height="7.2"></rect>
-                            <rect x="4.6" y="5.2" width="0.9" height="7.2"></rect>
-                          </g>
-                        </g>
-                      </svg>
-                      <span>Удалить</span>
-                    </div>
-                    <div class="menu-icon">Меню</div>
+                  <div class="price-col">3200 руб.</div>
+                  <div class="views-col"><a href="#statiscticProductModal" data-toggle="modal" data-target="#statiscticProductModal">9723</a></div>
+                  <div class="ups-col">
+                    <a href="#">Активировать</a>
                   </div>
-                </div>
-              </div>
-              <label class="checkbox">
-                <input type="checkbox">
-                <span></span>
-              </label>
-            </article>
+                  <div class="photo-col">
+                    <a href="#" class="img-link">
+                      <img src="http://www.davno.ru/assets/images/cards/big/love-12.jpg" alt="Кроссовки. Новые. Все размеры. Магазин бла бла бла проверка длинного текста">
+                    </a>
+                  </div>
 
-            <article class="card hot time">
-              <a href="#" class="img-link">
-                <img src="img/content/zont.jpg" alt="Зонт трость черный">
-              </a>
-              <div class="wrapper">
-                <div class="price">500 руб.</div>
-                <h2 class="title"><a href="#">Зонт трость черный</a></h2>
-                <div class="category-and-time">
-                  <div class="category"><a href="#">Аксессуары</a></div>
-                  <time class="time" datetime="2018-02-05T13:36">13:36</time>
-                </div>
-                <div class="btn-and-menu">
-                  <a href="lk-my-products-top.html" class="btn btn-primary">Продать быстрее</a>
                   <div class="edit-menu">
                     <a href="#statiscticProductModal" class="views" data-toggle="modal" data-target="#statiscticProductModal">
                       <svg version="1.1" baseProfile="tiny" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 10" overflow="scroll" xml:space="preserve">
@@ -602,20 +359,21 @@
                       </svg>
                       <span>Редактировать</span>
                     </div>
-                    <div class="remove">
+                    <div class="activate">
                       <svg version="1.1" baseProfile="tiny" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 14" overflow="scroll" xml:space="preserve">
                       <g>
                         <g>
-                          <path d="M13.5,13.5V4.4c0-0.1-0.1-0.3-0.2-0.4L9.1,0.1C9,0.1,8.9,0,8.8,0H2.2C2,0,1.7,0.2,1.7,0.5v5.8c0,0.3,0.2,0.5,0.5,0.5
-                            s0.5-0.2,0.5-0.5V1h5.3v4c0,0.3,0.2,0.5,0.5,0.5h3.8c0,0,0.1,0,0.1,0V13H2.8v-2.1c0-0.3-0.2-0.5-0.5-0.5s-0.5,0.2-0.5,0.5v2.6
-                            C1.7,13.8,2,14,2.2,14H13C13.3,14,13.5,13.8,13.5,13.5z M9.1,1.6l3.2,2.9H9.1V1.6z"/>
-                          <path d="M0.5,8.5C0.5,8.8,0.7,9,1,9h5.5l-1.7,1.5c-0.2,0.2-0.2,0.5,0,0.7c0.1,0.1,0.2,0.2,0.4,0.2c0.1,0,0.2,0,0.3-0.1l2.7-2.4
-                            c0.1-0.1,0.2-0.2,0.2-0.4c0-0.1-0.1-0.3-0.2-0.4L5.5,5.7c-0.2-0.2-0.5-0.2-0.7,0C4.6,6,4.6,6.3,4.8,6.5L6.5,8H1
-                            C0.7,8,0.5,8.2,0.5,8.5z"/>
+                          <g>
+                            <path d="M9.1,1.5H4.2c-0.2,0-0.4-0.2-0.4-0.4V0L0,3.7l3.7,3.7V6.4C3.7,6.2,3.9,6,4.2,6h4.5c2.5,0,4.5,2,4.5,4.5H14v-4
+                              C14,3.7,11.8,1.5,9.1,1.5z M13.1,7.5c-1-1.5-2.7-2.4-4.5-2.4H4.2c-0.4,0-0.8,0.2-1.1,0.5L1.3,3.7l1.9-1.9
+                              c0.3,0.3,0.6,0.5,1.1,0.5h4.9c2.2,0,4,1.8,4,4V7.5z"/>
+                            <rect x="13.1" y="11.3" width="0.9" height="0.9"/>
+                            <rect x="13.1" y="13.1" width="0.9" height="0.9"/>
+                          </g>
                         </g>
                       </g>
                       </svg>
-                      <span>Снять с публикации</span>
+                      <span>Активировать</span>
                     </div>
                     <div class="delete">
                       <svg version="1.1" baseProfile="tiny" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 14" overflow="scroll" xml:space="preserve">
@@ -636,25 +394,28 @@
                     <div class="menu-icon">Меню</div>
                   </div>
                 </div>
-              </div>
-              <label class="checkbox">
-                <input type="checkbox">
-                <span></span>
-              </label>
-            </article>
-            <article class="card hot time verified">
-              <a href="#" class="img-link">
-                <img src="img/content/anorac.jpg" alt="Анорак dc camo">
-              </a>
-              <div class="wrapper">
-                <div class="price">1 500 руб.</div>
-                <h2 class="title"><a href="#">Анорак dc camo</a></h2>
-                <div class="category-and-time">
-                  <div class="category"><a href="#">Одежда</a></div>
-                  <time class="time" datetime="2018-02-05T13:36">13:36</time>
-                </div>
-                <div class="btn-and-menu">
-                  <a href="lk-my-products-top.html" class="btn btn-primary">Продать быстрее</a>
+
+                <div class="card-list-item">
+                  <div class="checkbox-col">
+                    <input type="checkbox">
+                  </div>
+                  <div class="name-col"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi velit, quo ut, corporis sunt fugit recusandae harum voluptatem nostrum dolorum facilis? Corporis error necessitatibus impedit eum ea sequi soluta laborum.</a></div>
+                  <div class="days-col">
+                    <div class="progressbar">
+                      <span></span>0
+                    </div>
+                  </div>
+                  <div class="price-col">300 200 руб.</div>
+                  <div class="views-col"><a href="#statiscticProductModal" data-toggle="modal" data-target="#statiscticProductModal">9723</a></div>
+                  <div class="ups-col">
+                    <a href="#">Активировать</a>
+                  </div>
+                  <div class="photo-col">
+                    <a href="#" class="img-link">
+                      <img src="http://www.davno.ru/assets/images/cards/big/love-12.jpg" alt="Кроссовки. Новые. Все размеры. Магазин бла бла бла проверка длинного текста">
+                    </a>
+                  </div>
+
                   <div class="edit-menu">
                     <a href="#statiscticProductModal" class="views" data-toggle="modal" data-target="#statiscticProductModal">
                       <svg version="1.1" baseProfile="tiny" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 10" overflow="scroll" xml:space="preserve">
@@ -688,20 +449,381 @@
                       </svg>
                       <span>Редактировать</span>
                     </div>
-                    <div class="remove">
+                    <div class="activate">
                       <svg version="1.1" baseProfile="tiny" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 14" overflow="scroll" xml:space="preserve">
                       <g>
                         <g>
-                          <path d="M13.5,13.5V4.4c0-0.1-0.1-0.3-0.2-0.4L9.1,0.1C9,0.1,8.9,0,8.8,0H2.2C2,0,1.7,0.2,1.7,0.5v5.8c0,0.3,0.2,0.5,0.5,0.5
-                            s0.5-0.2,0.5-0.5V1h5.3v4c0,0.3,0.2,0.5,0.5,0.5h3.8c0,0,0.1,0,0.1,0V13H2.8v-2.1c0-0.3-0.2-0.5-0.5-0.5s-0.5,0.2-0.5,0.5v2.6
-                            C1.7,13.8,2,14,2.2,14H13C13.3,14,13.5,13.8,13.5,13.5z M9.1,1.6l3.2,2.9H9.1V1.6z"/>
-                          <path d="M0.5,8.5C0.5,8.8,0.7,9,1,9h5.5l-1.7,1.5c-0.2,0.2-0.2,0.5,0,0.7c0.1,0.1,0.2,0.2,0.4,0.2c0.1,0,0.2,0,0.3-0.1l2.7-2.4
-                            c0.1-0.1,0.2-0.2,0.2-0.4c0-0.1-0.1-0.3-0.2-0.4L5.5,5.7c-0.2-0.2-0.5-0.2-0.7,0C4.6,6,4.6,6.3,4.8,6.5L6.5,8H1
-                            C0.7,8,0.5,8.2,0.5,8.5z"/>
+                          <g>
+                            <path d="M9.1,1.5H4.2c-0.2,0-0.4-0.2-0.4-0.4V0L0,3.7l3.7,3.7V6.4C3.7,6.2,3.9,6,4.2,6h4.5c2.5,0,4.5,2,4.5,4.5H14v-4
+                              C14,3.7,11.8,1.5,9.1,1.5z M13.1,7.5c-1-1.5-2.7-2.4-4.5-2.4H4.2c-0.4,0-0.8,0.2-1.1,0.5L1.3,3.7l1.9-1.9
+                              c0.3,0.3,0.6,0.5,1.1,0.5h4.9c2.2,0,4,1.8,4,4V7.5z"/>
+                            <rect x="13.1" y="11.3" width="0.9" height="0.9"/>
+                            <rect x="13.1" y="13.1" width="0.9" height="0.9"/>
+                          </g>
                         </g>
                       </g>
                       </svg>
-                      <span>Снять с публикации</span>
+                      <span>Активировать</span>
+                    </div>
+                    <div class="delete">
+                      <svg version="1.1" baseProfile="tiny" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 14" overflow="scroll" xml:space="preserve">
+                        <g>
+                          <g>
+                            <path d="M11.6,1.6H9.7V0.4C9.7,0.2,9.5,0,9.3,0c0,0,0,0,0,0c0,0,0,0,0,0H4.8h0h0C4.5,0,4.3,0.2,4.3,0.4v1.2H2.4c-0.5,0-1,0.4-1,1
+                              v0.7v0.9h0.8v8.9c0,0.5,0.4,0.9,0.9,0.9h7.5c0.5,0,1-0.4,1-0.9V4.2h0.8V3.3V2.6C12.5,2.1,12.1,1.6,11.6,1.6z M5.2,0.9h3.7v0.8H5.2
+                              V0.9z M10.8,13.1C10.8,13.1,10.8,13.1,10.8,13.1l-7.6,0.1c-0.1,0-0.1,0-0.1-0.1V4.2h7.7V13.1z M11.7,3.3H2.3V2.6
+                              c0-0.1,0-0.1,0.1-0.1h9.2c0.1,0,0.1,0,0.1,0.1L11.7,3.3L11.7,3.3z"></path>
+                            <rect x="8.6" y="5.2" width="0.9" height="7.2"></rect>
+                            <rect x="6.6" y="5.2" width="0.9" height="7.2"></rect>
+                            <rect x="4.6" y="5.2" width="0.9" height="7.2"></rect>
+                          </g>
+                        </g>
+                      </svg>
+                      <span>Удалить</span>
+                    </div>
+                    <div class="menu-icon">Меню</div>
+                  </div>
+                </div>
+
+                <div class="card-list-item">
+                  <div class="checkbox-col">
+                    <input type="checkbox">
+                  </div>
+                  <div class="name-col"><a href="#">Куртка Анорак dc camo. Новая Продажа одежды Магазин ...</a></div>
+                  <div class="days-col">
+                    <div class="progressbar">
+                      <span></span>0
+                    </div>
+                  </div>
+                  <div class="price-col">13 000 200 руб.</div>
+                  <div class="views-col"><a href="#statiscticProductModal" data-toggle="modal" data-target="#statiscticProductModal">9723</a></div>
+                  <div class="ups-col">
+                    <a href="#">Активировать</a>
+                  </div>
+                  <div class="photo-col">
+                    <a href="#" class="img-link">
+                      <img src="http://www.davno.ru/assets/images/cards/big/love-12.jpg" alt="Кроссовки. Новые. Все размеры. Магазин бла бла бла проверка длинного текста">
+                    </a>
+                  </div>
+
+                  <div class="edit-menu">
+                    <a href="#statiscticProductModal" class="views" data-toggle="modal" data-target="#statiscticProductModal">
+                      <svg version="1.1" baseProfile="tiny" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 10" overflow="scroll" xml:space="preserve">
+                      <g>
+                        <path d="M13.9,2.9C12,1,9.6,0,7,0l0,0l0,0C4.4,0,2,1,0.1,2.9C0,3,0,3.3,0.1,3.5c0.1,0.1,0.2,0.1,0.3,0.1s0.2,0,0.3-0.1
+                          c1.7-1.7,4-2.6,6.3-2.6s4.6,0.9,6.3,2.6c0.2,0.2,0.5,0.2,0.6,0C14,3.3,14,3,13.9,2.9z"/>
+                        <path d="M7,3.3c-3,0-5.3,2.1-6.2,3C0.7,6.5,0.7,6.8,0.8,7C1.7,7.9,4,10,7,10s5.3-2.1,6.2-3c0.2-0.2,0.2-0.4,0-0.6
+                          C12.3,5.4,10,3.3,7,3.3z M4.2,4.9C3.9,5.4,3.7,6,3.7,6.7c0,0.6,0.1,1.2,0.4,1.7c-1-0.5-1.8-1.2-2.3-1.7C2.3,6.1,3.1,5.4,4.2,4.9z
+                           M5.9,9C5.1,8.5,4.6,7.7,4.6,6.7c0-1.1,0.6-2.1,1.6-2.4c0.3,0,0.5-0.1,0.8-0.1c0.2,0,0.4,0,0.6,0c1,0.3,1.7,1.3,1.7,2.5
+                          c0,1-0.5,1.9-1.3,2.3C7.6,9.1,7.3,9.1,7,9.1C6.6,9.1,6.2,9.1,5.9,9z M9.7,8.5C10,8,10.1,7.4,10.1,6.7S9.9,5.4,9.6,4.8
+                          c1.1,0.5,2,1.3,2.6,1.8C11.7,7.2,10.8,7.9,9.7,8.5z"/>
+                        <path d="M8,6.7c-0.6,0-1.1-0.5-1.1-1.1c-0.6,0-1.1,0.5-1.1,1.1s0.5,1.1,1.1,1.1C7.5,7.8,8,7.3,8,6.7z"/>
+                      </g>
+                      </svg>
+                      <span>Просмотры</span>
+                    </a>
+                    <div class="edit">
+                      <svg version="1.1" baseProfile="tiny" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 14" overflow="scroll" xml:space="preserve">
+                      <g>
+                        <g>
+                          <path fill="#1D1D1B" d="M13.7,0.3C13.4,0.1,13.1,0,12.8,0c-0.3,0-0.6,0.1-0.8,0.4l-0.5,0.5c0,0,0,0,0,0l-7,7c0,0,0,0.1-0.1,0.1
+                            C4.4,8,4.4,8,4.4,8L3.6,9.7c-0.1,0.2,0,0.4,0.1,0.5c0.1,0.1,0.2,0.1,0.3,0.1c0.1,0,0.1,0,0.2,0l1.7-0.6c0,0,0.1,0,0.1-0.1
+                            c0,0,0.1,0,0.1-0.1l7-7c0,0,0,0,0,0L13.6,2C14.1,1.5,14.1,0.8,13.7,0.3z M5.8,8.6L5.4,8.2l6.4-6.4l0.4,0.4
+                            C12.2,2.2,5.8,8.6,5.8,8.6z M13,1.4l-0.2,0.2l-0.4-0.4L12.6,1c0.1-0.1,0.1-0.1,0.2-0.1c0.1,0,0.1,0,0.2,0.1
+                            C13.1,1.1,13.1,1.3,13,1.4z"/>
+                          <path fill="#1D1D1B" d="M12.8,4.9c-0.2,0-0.4,0.2-0.4,0.4v7.4c0,0.2-0.2,0.4-0.4,0.4H1.3c-0.2,0-0.4-0.2-0.4-0.4V2.1
+                            c0-0.2,0.2-0.4,0.4-0.4h7.3c0.2,0,0.4-0.2,0.4-0.4S8.9,0.8,8.6,0.8H1.3C0.6,0.8,0,1.4,0,2.1v10.5C0,13.4,0.6,14,1.3,14h10.6
+                            c0.7,0,1.3-0.6,1.3-1.3V5.3C13.2,5.1,13,4.9,12.8,4.9z"/>
+                        </g>
+                      </g>
+                      </svg>
+                      <span>Редактировать</span>
+                    </div>
+                    <div class="activate">
+                      <svg version="1.1" baseProfile="tiny" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 14" overflow="scroll" xml:space="preserve">
+                      <g>
+                        <g>
+                          <g>
+                            <path d="M9.1,1.5H4.2c-0.2,0-0.4-0.2-0.4-0.4V0L0,3.7l3.7,3.7V6.4C3.7,6.2,3.9,6,4.2,6h4.5c2.5,0,4.5,2,4.5,4.5H14v-4
+                              C14,3.7,11.8,1.5,9.1,1.5z M13.1,7.5c-1-1.5-2.7-2.4-4.5-2.4H4.2c-0.4,0-0.8,0.2-1.1,0.5L1.3,3.7l1.9-1.9
+                              c0.3,0.3,0.6,0.5,1.1,0.5h4.9c2.2,0,4,1.8,4,4V7.5z"/>
+                            <rect x="13.1" y="11.3" width="0.9" height="0.9"/>
+                            <rect x="13.1" y="13.1" width="0.9" height="0.9"/>
+                          </g>
+                        </g>
+                      </g>
+                      </svg>
+                      <span>Активировать</span>
+                    </div>
+                    <div class="delete">
+                      <svg version="1.1" baseProfile="tiny" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 14" overflow="scroll" xml:space="preserve">
+                        <g>
+                          <g>
+                            <path d="M11.6,1.6H9.7V0.4C9.7,0.2,9.5,0,9.3,0c0,0,0,0,0,0c0,0,0,0,0,0H4.8h0h0C4.5,0,4.3,0.2,4.3,0.4v1.2H2.4c-0.5,0-1,0.4-1,1
+                              v0.7v0.9h0.8v8.9c0,0.5,0.4,0.9,0.9,0.9h7.5c0.5,0,1-0.4,1-0.9V4.2h0.8V3.3V2.6C12.5,2.1,12.1,1.6,11.6,1.6z M5.2,0.9h3.7v0.8H5.2
+                              V0.9z M10.8,13.1C10.8,13.1,10.8,13.1,10.8,13.1l-7.6,0.1c-0.1,0-0.1,0-0.1-0.1V4.2h7.7V13.1z M11.7,3.3H2.3V2.6
+                              c0-0.1,0-0.1,0.1-0.1h9.2c0.1,0,0.1,0,0.1,0.1L11.7,3.3L11.7,3.3z"></path>
+                            <rect x="8.6" y="5.2" width="0.9" height="7.2"></rect>
+                            <rect x="6.6" y="5.2" width="0.9" height="7.2"></rect>
+                            <rect x="4.6" y="5.2" width="0.9" height="7.2"></rect>
+                          </g>
+                        </g>
+                      </svg>
+                      <span>Удалить</span>
+                    </div>
+                    <div class="menu-icon">Меню</div>
+                  </div>
+                </div>
+
+                <div class="card-list-item">
+                  <div class="checkbox-col">
+                    <input type="checkbox">
+                  </div>
+                  <div class="name-col"><a href="#">Куртка Анорак dc camo. Новая Продажа одежды Магазин ...</a></div>
+                  <div class="days-col">
+                    <div class="progressbar">
+                      <span></span>0
+                    </div>
+                  </div>
+                  <div class="price-col">3200 руб.</div>
+                  <div class="views-col"><a href="#statiscticProductModal" data-toggle="modal" data-target="#statiscticProductModal">9723</a></div>
+                  <div class="ups-col">
+                    <a href="#">Активировать</a>
+                  </div>
+                  <div class="photo-col">
+                    <a href="#" class="img-link">
+                      <img src="http://www.davno.ru/assets/images/cards/big/love-12.jpg" alt="Кроссовки. Новые. Все размеры. Магазин бла бла бла проверка длинного текста">
+                    </a>
+                  </div>
+
+                  <div class="edit-menu">
+                    <a href="#statiscticProductModal" class="views" data-toggle="modal" data-target="#statiscticProductModal">
+                      <svg version="1.1" baseProfile="tiny" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 10" overflow="scroll" xml:space="preserve">
+                      <g>
+                        <path d="M13.9,2.9C12,1,9.6,0,7,0l0,0l0,0C4.4,0,2,1,0.1,2.9C0,3,0,3.3,0.1,3.5c0.1,0.1,0.2,0.1,0.3,0.1s0.2,0,0.3-0.1
+                          c1.7-1.7,4-2.6,6.3-2.6s4.6,0.9,6.3,2.6c0.2,0.2,0.5,0.2,0.6,0C14,3.3,14,3,13.9,2.9z"/>
+                        <path d="M7,3.3c-3,0-5.3,2.1-6.2,3C0.7,6.5,0.7,6.8,0.8,7C1.7,7.9,4,10,7,10s5.3-2.1,6.2-3c0.2-0.2,0.2-0.4,0-0.6
+                          C12.3,5.4,10,3.3,7,3.3z M4.2,4.9C3.9,5.4,3.7,6,3.7,6.7c0,0.6,0.1,1.2,0.4,1.7c-1-0.5-1.8-1.2-2.3-1.7C2.3,6.1,3.1,5.4,4.2,4.9z
+                           M5.9,9C5.1,8.5,4.6,7.7,4.6,6.7c0-1.1,0.6-2.1,1.6-2.4c0.3,0,0.5-0.1,0.8-0.1c0.2,0,0.4,0,0.6,0c1,0.3,1.7,1.3,1.7,2.5
+                          c0,1-0.5,1.9-1.3,2.3C7.6,9.1,7.3,9.1,7,9.1C6.6,9.1,6.2,9.1,5.9,9z M9.7,8.5C10,8,10.1,7.4,10.1,6.7S9.9,5.4,9.6,4.8
+                          c1.1,0.5,2,1.3,2.6,1.8C11.7,7.2,10.8,7.9,9.7,8.5z"/>
+                        <path d="M8,6.7c-0.6,0-1.1-0.5-1.1-1.1c-0.6,0-1.1,0.5-1.1,1.1s0.5,1.1,1.1,1.1C7.5,7.8,8,7.3,8,6.7z"/>
+                      </g>
+                      </svg>
+                      <span>Просмотры</span>
+                    </a>
+                    <div class="edit">
+                      <svg version="1.1" baseProfile="tiny" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 14" overflow="scroll" xml:space="preserve">
+                      <g>
+                        <g>
+                          <path fill="#1D1D1B" d="M13.7,0.3C13.4,0.1,13.1,0,12.8,0c-0.3,0-0.6,0.1-0.8,0.4l-0.5,0.5c0,0,0,0,0,0l-7,7c0,0,0,0.1-0.1,0.1
+                            C4.4,8,4.4,8,4.4,8L3.6,9.7c-0.1,0.2,0,0.4,0.1,0.5c0.1,0.1,0.2,0.1,0.3,0.1c0.1,0,0.1,0,0.2,0l1.7-0.6c0,0,0.1,0,0.1-0.1
+                            c0,0,0.1,0,0.1-0.1l7-7c0,0,0,0,0,0L13.6,2C14.1,1.5,14.1,0.8,13.7,0.3z M5.8,8.6L5.4,8.2l6.4-6.4l0.4,0.4
+                            C12.2,2.2,5.8,8.6,5.8,8.6z M13,1.4l-0.2,0.2l-0.4-0.4L12.6,1c0.1-0.1,0.1-0.1,0.2-0.1c0.1,0,0.1,0,0.2,0.1
+                            C13.1,1.1,13.1,1.3,13,1.4z"/>
+                          <path fill="#1D1D1B" d="M12.8,4.9c-0.2,0-0.4,0.2-0.4,0.4v7.4c0,0.2-0.2,0.4-0.4,0.4H1.3c-0.2,0-0.4-0.2-0.4-0.4V2.1
+                            c0-0.2,0.2-0.4,0.4-0.4h7.3c0.2,0,0.4-0.2,0.4-0.4S8.9,0.8,8.6,0.8H1.3C0.6,0.8,0,1.4,0,2.1v10.5C0,13.4,0.6,14,1.3,14h10.6
+                            c0.7,0,1.3-0.6,1.3-1.3V5.3C13.2,5.1,13,4.9,12.8,4.9z"/>
+                        </g>
+                      </g>
+                      </svg>
+                      <span>Редактировать</span>
+                    </div>
+                    <div class="activate">
+                      <svg version="1.1" baseProfile="tiny" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 14" overflow="scroll" xml:space="preserve">
+                      <g>
+                        <g>
+                          <g>
+                            <path d="M9.1,1.5H4.2c-0.2,0-0.4-0.2-0.4-0.4V0L0,3.7l3.7,3.7V6.4C3.7,6.2,3.9,6,4.2,6h4.5c2.5,0,4.5,2,4.5,4.5H14v-4
+                              C14,3.7,11.8,1.5,9.1,1.5z M13.1,7.5c-1-1.5-2.7-2.4-4.5-2.4H4.2c-0.4,0-0.8,0.2-1.1,0.5L1.3,3.7l1.9-1.9
+                              c0.3,0.3,0.6,0.5,1.1,0.5h4.9c2.2,0,4,1.8,4,4V7.5z"/>
+                            <rect x="13.1" y="11.3" width="0.9" height="0.9"/>
+                            <rect x="13.1" y="13.1" width="0.9" height="0.9"/>
+                          </g>
+                        </g>
+                      </g>
+                      </svg>
+                      <span>Активировать</span>
+                    </div>
+                    <div class="delete">
+                      <svg version="1.1" baseProfile="tiny" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 14" overflow="scroll" xml:space="preserve">
+                        <g>
+                          <g>
+                            <path d="M11.6,1.6H9.7V0.4C9.7,0.2,9.5,0,9.3,0c0,0,0,0,0,0c0,0,0,0,0,0H4.8h0h0C4.5,0,4.3,0.2,4.3,0.4v1.2H2.4c-0.5,0-1,0.4-1,1
+                              v0.7v0.9h0.8v8.9c0,0.5,0.4,0.9,0.9,0.9h7.5c0.5,0,1-0.4,1-0.9V4.2h0.8V3.3V2.6C12.5,2.1,12.1,1.6,11.6,1.6z M5.2,0.9h3.7v0.8H5.2
+                              V0.9z M10.8,13.1C10.8,13.1,10.8,13.1,10.8,13.1l-7.6,0.1c-0.1,0-0.1,0-0.1-0.1V4.2h7.7V13.1z M11.7,3.3H2.3V2.6
+                              c0-0.1,0-0.1,0.1-0.1h9.2c0.1,0,0.1,0,0.1,0.1L11.7,3.3L11.7,3.3z"></path>
+                            <rect x="8.6" y="5.2" width="0.9" height="7.2"></rect>
+                            <rect x="6.6" y="5.2" width="0.9" height="7.2"></rect>
+                            <rect x="4.6" y="5.2" width="0.9" height="7.2"></rect>
+                          </g>
+                        </g>
+                      </svg>
+                      <span>Удалить</span>
+                    </div>
+                    <div class="menu-icon">Меню</div>
+                  </div>
+                </div>
+
+                <div class="card-list-item">
+                  <div class="checkbox-col">
+                    <input type="checkbox">
+                  </div>
+                  <div class="name-col"><a href="#">Куртка Анорак dc camo. Новая Продажа одежды Магазин ...</a></div>
+                  <div class="days-col">
+                    <div class="progressbar">
+                      <span></span>0
+                    </div>
+                  </div>
+                  <div class="price-col">3200 руб.</div>
+                  <div class="views-col"><a href="#statiscticProductModal" data-toggle="modal" data-target="#statiscticProductModal">9723</a></div>
+                  <div class="ups-col">
+                    <a href="#">Активировать</a>
+                  </div>
+                  <div class="photo-col">
+                    <a href="#" class="img-link">
+                      <img src="http://www.davno.ru/assets/images/cards/big/love-12.jpg" alt="Кроссовки. Новые. Все размеры. Магазин бла бла бла проверка длинного текста">
+                    </a>
+                  </div>
+
+                  <div class="edit-menu">
+                    <a href="#statiscticProductModal" class="views" data-toggle="modal" data-target="#statiscticProductModal">
+                      <svg version="1.1" baseProfile="tiny" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 10" overflow="scroll" xml:space="preserve">
+                      <g>
+                        <path d="M13.9,2.9C12,1,9.6,0,7,0l0,0l0,0C4.4,0,2,1,0.1,2.9C0,3,0,3.3,0.1,3.5c0.1,0.1,0.2,0.1,0.3,0.1s0.2,0,0.3-0.1
+                          c1.7-1.7,4-2.6,6.3-2.6s4.6,0.9,6.3,2.6c0.2,0.2,0.5,0.2,0.6,0C14,3.3,14,3,13.9,2.9z"/>
+                        <path d="M7,3.3c-3,0-5.3,2.1-6.2,3C0.7,6.5,0.7,6.8,0.8,7C1.7,7.9,4,10,7,10s5.3-2.1,6.2-3c0.2-0.2,0.2-0.4,0-0.6
+                          C12.3,5.4,10,3.3,7,3.3z M4.2,4.9C3.9,5.4,3.7,6,3.7,6.7c0,0.6,0.1,1.2,0.4,1.7c-1-0.5-1.8-1.2-2.3-1.7C2.3,6.1,3.1,5.4,4.2,4.9z
+                           M5.9,9C5.1,8.5,4.6,7.7,4.6,6.7c0-1.1,0.6-2.1,1.6-2.4c0.3,0,0.5-0.1,0.8-0.1c0.2,0,0.4,0,0.6,0c1,0.3,1.7,1.3,1.7,2.5
+                          c0,1-0.5,1.9-1.3,2.3C7.6,9.1,7.3,9.1,7,9.1C6.6,9.1,6.2,9.1,5.9,9z M9.7,8.5C10,8,10.1,7.4,10.1,6.7S9.9,5.4,9.6,4.8
+                          c1.1,0.5,2,1.3,2.6,1.8C11.7,7.2,10.8,7.9,9.7,8.5z"/>
+                        <path d="M8,6.7c-0.6,0-1.1-0.5-1.1-1.1c-0.6,0-1.1,0.5-1.1,1.1s0.5,1.1,1.1,1.1C7.5,7.8,8,7.3,8,6.7z"/>
+                      </g>
+                      </svg>
+                      <span>Просмотры</span>
+                    </a>
+                    <div class="edit">
+                      <svg version="1.1" baseProfile="tiny" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 14" overflow="scroll" xml:space="preserve">
+                      <g>
+                        <g>
+                          <path fill="#1D1D1B" d="M13.7,0.3C13.4,0.1,13.1,0,12.8,0c-0.3,0-0.6,0.1-0.8,0.4l-0.5,0.5c0,0,0,0,0,0l-7,7c0,0,0,0.1-0.1,0.1
+                            C4.4,8,4.4,8,4.4,8L3.6,9.7c-0.1,0.2,0,0.4,0.1,0.5c0.1,0.1,0.2,0.1,0.3,0.1c0.1,0,0.1,0,0.2,0l1.7-0.6c0,0,0.1,0,0.1-0.1
+                            c0,0,0.1,0,0.1-0.1l7-7c0,0,0,0,0,0L13.6,2C14.1,1.5,14.1,0.8,13.7,0.3z M5.8,8.6L5.4,8.2l6.4-6.4l0.4,0.4
+                            C12.2,2.2,5.8,8.6,5.8,8.6z M13,1.4l-0.2,0.2l-0.4-0.4L12.6,1c0.1-0.1,0.1-0.1,0.2-0.1c0.1,0,0.1,0,0.2,0.1
+                            C13.1,1.1,13.1,1.3,13,1.4z"/>
+                          <path fill="#1D1D1B" d="M12.8,4.9c-0.2,0-0.4,0.2-0.4,0.4v7.4c0,0.2-0.2,0.4-0.4,0.4H1.3c-0.2,0-0.4-0.2-0.4-0.4V2.1
+                            c0-0.2,0.2-0.4,0.4-0.4h7.3c0.2,0,0.4-0.2,0.4-0.4S8.9,0.8,8.6,0.8H1.3C0.6,0.8,0,1.4,0,2.1v10.5C0,13.4,0.6,14,1.3,14h10.6
+                            c0.7,0,1.3-0.6,1.3-1.3V5.3C13.2,5.1,13,4.9,12.8,4.9z"/>
+                        </g>
+                      </g>
+                      </svg>
+                      <span>Редактировать</span>
+                    </div>
+                    <div class="activate">
+                      <svg version="1.1" baseProfile="tiny" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 14" overflow="scroll" xml:space="preserve">
+                      <g>
+                        <g>
+                          <g>
+                            <path d="M9.1,1.5H4.2c-0.2,0-0.4-0.2-0.4-0.4V0L0,3.7l3.7,3.7V6.4C3.7,6.2,3.9,6,4.2,6h4.5c2.5,0,4.5,2,4.5,4.5H14v-4
+                              C14,3.7,11.8,1.5,9.1,1.5z M13.1,7.5c-1-1.5-2.7-2.4-4.5-2.4H4.2c-0.4,0-0.8,0.2-1.1,0.5L1.3,3.7l1.9-1.9
+                              c0.3,0.3,0.6,0.5,1.1,0.5h4.9c2.2,0,4,1.8,4,4V7.5z"/>
+                            <rect x="13.1" y="11.3" width="0.9" height="0.9"/>
+                            <rect x="13.1" y="13.1" width="0.9" height="0.9"/>
+                          </g>
+                        </g>
+                      </g>
+                      </svg>
+                      <span>Активировать</span>
+                    </div>
+                    <div class="delete">
+                      <svg version="1.1" baseProfile="tiny" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 14" overflow="scroll" xml:space="preserve">
+                        <g>
+                          <g>
+                            <path d="M11.6,1.6H9.7V0.4C9.7,0.2,9.5,0,9.3,0c0,0,0,0,0,0c0,0,0,0,0,0H4.8h0h0C4.5,0,4.3,0.2,4.3,0.4v1.2H2.4c-0.5,0-1,0.4-1,1
+                              v0.7v0.9h0.8v8.9c0,0.5,0.4,0.9,0.9,0.9h7.5c0.5,0,1-0.4,1-0.9V4.2h0.8V3.3V2.6C12.5,2.1,12.1,1.6,11.6,1.6z M5.2,0.9h3.7v0.8H5.2
+                              V0.9z M10.8,13.1C10.8,13.1,10.8,13.1,10.8,13.1l-7.6,0.1c-0.1,0-0.1,0-0.1-0.1V4.2h7.7V13.1z M11.7,3.3H2.3V2.6
+                              c0-0.1,0-0.1,0.1-0.1h9.2c0.1,0,0.1,0,0.1,0.1L11.7,3.3L11.7,3.3z"></path>
+                            <rect x="8.6" y="5.2" width="0.9" height="7.2"></rect>
+                            <rect x="6.6" y="5.2" width="0.9" height="7.2"></rect>
+                            <rect x="4.6" y="5.2" width="0.9" height="7.2"></rect>
+                          </g>
+                        </g>
+                      </svg>
+                      <span>Удалить</span>
+                    </div>
+                    <div class="menu-icon">Меню</div>
+                  </div>
+                </div>
+
+                <div class="card-list-item">
+                  <div class="checkbox-col">
+                    <input type="checkbox">
+                  </div>
+                  <div class="name-col"><a href="#">Куртка Анорак dc camo. Новая Продажа одежды Магазин ...</a></div>
+                  <div class="days-col">
+                    <div class="progressbar">
+                      <span></span>0
+                    </div>
+                  </div>
+                  <div class="price-col">3200 руб.</div>
+                  <div class="views-col"><a href="#statiscticProductModal" data-toggle="modal" data-target="#statiscticProductModal">9723</a></div>
+                  <div class="ups-col">
+                    <a href="#">Активировать</a>
+                  </div>
+                  <div class="photo-col">
+                    <a href="#" class="img-link">
+                      <img src="http://www.davno.ru/assets/images/cards/big/love-12.jpg" alt="Кроссовки. Новые. Все размеры. Магазин бла бла бла проверка длинного текста">
+                    </a>
+                  </div>
+
+                  <div class="edit-menu">
+                    <a href="#statiscticProductModal" class="views" data-toggle="modal" data-target="#statiscticProductModal">
+                      <svg version="1.1" baseProfile="tiny" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 10" overflow="scroll" xml:space="preserve">
+                      <g>
+                        <path d="M13.9,2.9C12,1,9.6,0,7,0l0,0l0,0C4.4,0,2,1,0.1,2.9C0,3,0,3.3,0.1,3.5c0.1,0.1,0.2,0.1,0.3,0.1s0.2,0,0.3-0.1
+                          c1.7-1.7,4-2.6,6.3-2.6s4.6,0.9,6.3,2.6c0.2,0.2,0.5,0.2,0.6,0C14,3.3,14,3,13.9,2.9z"/>
+                        <path d="M7,3.3c-3,0-5.3,2.1-6.2,3C0.7,6.5,0.7,6.8,0.8,7C1.7,7.9,4,10,7,10s5.3-2.1,6.2-3c0.2-0.2,0.2-0.4,0-0.6
+                          C12.3,5.4,10,3.3,7,3.3z M4.2,4.9C3.9,5.4,3.7,6,3.7,6.7c0,0.6,0.1,1.2,0.4,1.7c-1-0.5-1.8-1.2-2.3-1.7C2.3,6.1,3.1,5.4,4.2,4.9z
+                           M5.9,9C5.1,8.5,4.6,7.7,4.6,6.7c0-1.1,0.6-2.1,1.6-2.4c0.3,0,0.5-0.1,0.8-0.1c0.2,0,0.4,0,0.6,0c1,0.3,1.7,1.3,1.7,2.5
+                          c0,1-0.5,1.9-1.3,2.3C7.6,9.1,7.3,9.1,7,9.1C6.6,9.1,6.2,9.1,5.9,9z M9.7,8.5C10,8,10.1,7.4,10.1,6.7S9.9,5.4,9.6,4.8
+                          c1.1,0.5,2,1.3,2.6,1.8C11.7,7.2,10.8,7.9,9.7,8.5z"/>
+                        <path d="M8,6.7c-0.6,0-1.1-0.5-1.1-1.1c-0.6,0-1.1,0.5-1.1,1.1s0.5,1.1,1.1,1.1C7.5,7.8,8,7.3,8,6.7z"/>
+                      </g>
+                      </svg>
+                      <span>Просмотры</span>
+                    </a>
+                    <div class="edit">
+                      <svg version="1.1" baseProfile="tiny" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 14" overflow="scroll" xml:space="preserve">
+                      <g>
+                        <g>
+                          <path fill="#1D1D1B" d="M13.7,0.3C13.4,0.1,13.1,0,12.8,0c-0.3,0-0.6,0.1-0.8,0.4l-0.5,0.5c0,0,0,0,0,0l-7,7c0,0,0,0.1-0.1,0.1
+                            C4.4,8,4.4,8,4.4,8L3.6,9.7c-0.1,0.2,0,0.4,0.1,0.5c0.1,0.1,0.2,0.1,0.3,0.1c0.1,0,0.1,0,0.2,0l1.7-0.6c0,0,0.1,0,0.1-0.1
+                            c0,0,0.1,0,0.1-0.1l7-7c0,0,0,0,0,0L13.6,2C14.1,1.5,14.1,0.8,13.7,0.3z M5.8,8.6L5.4,8.2l6.4-6.4l0.4,0.4
+                            C12.2,2.2,5.8,8.6,5.8,8.6z M13,1.4l-0.2,0.2l-0.4-0.4L12.6,1c0.1-0.1,0.1-0.1,0.2-0.1c0.1,0,0.1,0,0.2,0.1
+                            C13.1,1.1,13.1,1.3,13,1.4z"/>
+                          <path fill="#1D1D1B" d="M12.8,4.9c-0.2,0-0.4,0.2-0.4,0.4v7.4c0,0.2-0.2,0.4-0.4,0.4H1.3c-0.2,0-0.4-0.2-0.4-0.4V2.1
+                            c0-0.2,0.2-0.4,0.4-0.4h7.3c0.2,0,0.4-0.2,0.4-0.4S8.9,0.8,8.6,0.8H1.3C0.6,0.8,0,1.4,0,2.1v10.5C0,13.4,0.6,14,1.3,14h10.6
+                            c0.7,0,1.3-0.6,1.3-1.3V5.3C13.2,5.1,13,4.9,12.8,4.9z"/>
+                        </g>
+                      </g>
+                      </svg>
+                      <span>Редактировать</span>
+                    </div>
+                    <div class="activate">
+                      <svg version="1.1" baseProfile="tiny" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 14" overflow="scroll" xml:space="preserve">
+                      <g>
+                        <g>
+                          <g>
+                            <path d="M9.1,1.5H4.2c-0.2,0-0.4-0.2-0.4-0.4V0L0,3.7l3.7,3.7V6.4C3.7,6.2,3.9,6,4.2,6h4.5c2.5,0,4.5,2,4.5,4.5H14v-4
+                              C14,3.7,11.8,1.5,9.1,1.5z M13.1,7.5c-1-1.5-2.7-2.4-4.5-2.4H4.2c-0.4,0-0.8,0.2-1.1,0.5L1.3,3.7l1.9-1.9
+                              c0.3,0.3,0.6,0.5,1.1,0.5h4.9c2.2,0,4,1.8,4,4V7.5z"/>
+                            <rect x="13.1" y="11.3" width="0.9" height="0.9"/>
+                            <rect x="13.1" y="13.1" width="0.9" height="0.9"/>
+                          </g>
+                        </g>
+                      </g>
+                      </svg>
+                      <span>Активировать</span>
                     </div>
                     <div class="delete">
                       <svg version="1.1" baseProfile="tiny" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 14" overflow="scroll" xml:space="preserve">
@@ -723,16 +845,12 @@
                   </div>
                 </div>
               </div>
-              <label class="checkbox">
-                <input type="checkbox">
-                <span></span>
-              </label>
-            </article>
+            </div>
 
             <div class="actions-with-marked">
               <div class="title">Выберите действие<br> для <span>1</span> объявлений (я):</div>
               <div class="actions">
-                <a href="#" class="remove">Снять с публикации</a>
+                <a href="#" class="activate">Активировать</a>
                 <a href="#" class="delete">Удалить</a>
                 <a href="#" class="vip">Сделать VIP</a>
                 <a href="#" class="hot">Продать срочно</a>
@@ -964,76 +1082,6 @@
               <p>Предложите более оптимальные условия сделки.</p>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Загрузка объявлений -->
-  <div class="modal fade downloadExcelModal" id="downloadExcelModal" tabindex="-1" role="dialog" aria-labelledby="downloadExcelModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <div class="modal-title" id="downloadExcelModalLabel">Массовая загрузка объявлений Excel</div>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
-              <g>
-                <g>
-                  <polygon class="st0" points="16,1.6 14.4,0 8,6.4 1.6,0 0,1.6 6.4,8 0,14.4 1.6,16 8,9.6 14.4,16 16,14.4 9.6,8    "/>
-                </g>
-              </g>
-            </svg>
-          </button>
-        </div>
-        <div class="modal-body">
-          <!-- Действие 1 - перетащить файлы -->
-          <!-- <p>Загружайте большое количество позиций товаров быстро и удобно, с функцией Массового добавления объявлений. Для начала Вам необходимо будет создать документ в MS Excel 2007 - 2017.</p>
-          <p>В документе должны быть следующие заголовки столбцов: <b>URL Фото, Категория, Регион, Название</b> (товара, услуги), Подробное <b>описание</b> с форматированием, <b>Единица измерения</b> (Пример: 2 штуки, 8 часов и т.д.)</p>
-          <p>Или скачайте готовые шаблоны для разных рубрик по ссылке: <a href="#">Скачать готовые шаблоны</a>.</p> -->
-          <form action="#">
-            <!-- Действие 1 - перетащить файлы -->
-            <!-- <label class="add-files clearfix">
-              <input type="file">
-              <span>Перетащите в поле Ваш файл excel с объявлениями или нажмите <span>открыть</span>.</span>
-            </label> -->
-
-            <!-- Действие 2 - Файл загружен -->
-            <!-- <div class="downloaded-files">
-              <div class="item">
-                <div class="name-and-size">
-                  <div class="name">Прайс февраль сбагри.xlsx</div>
-                  <div class="size">2 мб</div>
-                </div>
-                <div class="status">Загружено</div>
-              </div>
-              <div class="item">
-                <div class="name-and-size">
-                  <div class="name">Прайс февраль сбагри.xlsx</div>
-                  <div class="size">2 мб</div>
-                </div>
-                <div class="status">Загружено</div>
-              </div>
-              <div class="item">
-                <div class="name-and-size">
-                  <div class="name">Прайс февраль сбагри.xlsx</div>
-                  <div class="size">2 мб</div>
-                </div>
-                <div class="status">Загружено</div>
-              </div>
-            </div> -->
-
-            <!-- Действие 3 - Объявления созданы -->
-
-            <div class="downloaded-status">
-              <div class="icon success"></div>
-              <div class="text">Объявления созданы и отправлены на модерацию</div>
-            </div>
-            
-            <div class="add-files-btns">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal" aria-label="Close">Отмена</button>
-              <button type="button" class="btn btn-success">Создать объявления</button>
-            </div>
-          </form>
         </div>
       </div>
     </div>

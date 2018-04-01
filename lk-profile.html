@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha256-UK1EiopXIL+KVhfbFa8xrmAWPeBjMVdvYMYkTAEv/HI=" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css">
-  <title>ЛК Мои закупки - Создать | Сбагри</title>
+  <title>ЛК Профиль | Сбагри</title>
 </head>
 
 <body>
@@ -53,7 +53,9 @@
                 <div class="name">Анатолий</div>
                 <div class="price">533, 00 ₽</div>
               </div>
-              <div class="photo"><img src="img/svg/user.svg" alt="Анатолий"></div>
+              <div class="photo">
+                <img src="img/svg/user.svg" alt="Анатолий">
+              </div>
             </div>
             <ul class="user-login-menu">
               <li><a href="lk-profile.html">Профиль</a></li>
@@ -82,9 +84,10 @@
     <div class="container lk-main-container">
       <aside class="lk-sidebar">
         <div class="lk-info-wrapper">
-          <a href="lk-profile.html" class="lk-profile-img">
+          <div class="lk-profile-img change-photo">
             <img src="img/content/lk-img.jpg" alt="Анатолий">
-          </a>
+            <a class="change-photo-link" href="#changePhotoModal" data-target="#changePhotoModal" data-toggle="modal">Изменить фото</a>
+          </div>
           <div class="lk-info-block">
             <div class="name">Анатолий</div>
             <div class="money">152 000.00 руб.</div>
@@ -92,7 +95,7 @@
           </div>
         </div>
         <ul class="lk-nav">
-          <li>
+          <li class="active">
             <a href="lk-profile.html">
               <svg version="1.1" baseProfile="tiny" class="lk-nav-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18" overflow="scroll" xml:space="preserve">
                 <path d="M9,10.1c2.7,0,4.8-2.3,4.8-5.1S11.6,0,9,0S4.2,2.3,4.2,5S6.3,10.1,9,10.1z M9,1.3c2,0,3.5,1.7,3.5,3.7S10.9,8.8,9,8.8
@@ -157,7 +160,7 @@
               <span>Мои объявления</span>
             </a>
           </li>
-          <li class="active">
+          <li>
             <a href="lk-procurement.html">
               <svg version="1.1" baseProfile="tiny" class="lk-nav-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18" overflow="scroll" xml:space="preserve">
                 <g>
@@ -278,83 +281,81 @@
         </ul>
       </aside>
       <div class="lk-main-area">
-        <div class="lk-procurement-add-area">
-          <div class="lk-procurement-add-area-title">Категория</div>
-          <form action="#">
-            <div class="categories-block">
-              <ul class="categories-list one-level">
-                <li>Транспорт</li>
-                <li>Недвижимость</li>
-                <li>Строительство и ремонт</li>
-                <li>Услуги</li>
-                <li>Металлы, Сырье, Материалы</li>
-                <li>Для бизнеса и производства</li>
-                <li>Неликвиды</li>
-                <li>Сельское и фермерское хозяйство</li>
-                <li>Продовольственные и </li>
-                <li>непродовольственные товары</li>
-                <li>Дом, дача, сад</li>
-                <li>Бытовая техника и электроника</li>
-                <li>Красота, медицина, спорт</li>
-                <li>Ремесленники</li>
-              </ul>
-              <ul class="categories-list two-level">
-                <li>Инструмент</li>
-                <li>Стройка</li>
-                <li>Отделочные матриалы</li>
-              </ul>
-              <ul class="categories-list three-level">
-                <li>Окна, зеркала, стеклянные конструкции</li>
-                <li>Художественная ковка</li>
-                <li>Натуральный и искусственный камень</li>
-                <li>Защитные материалы</li>
-                <li>Фасадные материалы</li>
-                <li>Плитка отделочная</li>
-                <li>Потолки</li>
-                <li>Напольные покрытия и материалы</li>
-                <li>Двери и фурнитура</li>
-                <li>Обои, настенные покрытия</li>
-                <li>Элементы декора, люстры</li>
-                <li>Другое</li>
-              </ul>
-            </div>
-            <label class="form-group">
-              <span>Выберите регион</span>
-              <select class="form-control select">
-                <option>Москва</option>
-                <option>Санкт-Петербург</option>
-                <option>Сочи</option>
-                <option>Краснодар</option>
-              </select>
-            </label>
-            <label class="form-group">
-              <span>Название подписки</span>
-              <input type="text" class="form-control">
-            </label>
-            <label class="form-group">
-              <span>Частота уведомлений</span>
-              <select class="form-control select">
-                <option>Каждую минуту</option>
-                <option>Каждый час</option>
-                <option>Каждый день</option>
-              </select>
-            </label>
-            <div class="form-group">
-              <span>Цена Руб.</span>
-              <div class="two-in-row">
-                <input type="text" class="form-control" placeholder="От">
-                <input type="text" class="form-control" placeholder="До">
+        <div class="lk-profile-area">
+          <div class="section-wrapper">
+            <div class="section-title">Контактная информация</div>
+            <form action="#" class="row">
+              <div class="col-md-6">
+                <div class="section-description">Данные пользователя / организации</div>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Имя">
+                </div>
+                <div class="form-group">
+                  <select class="form-control select">
+                    <option>Юр. лицо</option>
+                    <option>ИП</option>
+                    <option>Физ. лицо</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="ИНН">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Фактический адрес организации">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Название компании">
+                </div>
+                <div class="form-group status-block">
+                  Статус: <span class="success">ИНН пока не отправлен на провернку</span> <!-- Без класса - обычный серый цвет. error - красный, warning - оранжевый, sucess - зеленый  -->
+                </div>
               </div>
+              <div class="col-md-6">
+                <div class="section-description">Номера телефонов и E-mail</div>
+                <label class="form-group">
+                  <span>Основной телефон:</span>
+                  <input type="tel" class="form-control" placeholder="+7 (999) 999-99-99">
+                </label>
+                <label class="form-group">
+                  <span>Рабочий телефон:</span>
+                  <input type="tel" class="form-control" placeholder="+7 (999) 999-99-99">
+                </label>
+                <label class="form-group form-check-label">
+                  <input type="checkbox" class="form-check-input" checked="">
+                  <span class="check"></span>
+                  <span>Показывать только рабочий телефон</span>
+                </label>
+                <div class="form-group">
+                  <input type="email" class="form-control" placeholder="E-mail">
+                </div>
+                <div class="form-group">
+                  Мой регион: <a href="#townModal" data-toggle="modal" data-target="#townModal" class="town-icon">Санкт-Петербург</a>
+                </div>
+                <div class="form-group">
+                  <a href="#">Прочитать пользовательское соглашение</a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <button type="submit" class="btn btn-success">Сохранить</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="section-wrapper">
+            <div class="section-title">Изменить пароль</div>
+            <div class="section-description">Введите новый пароль, и повторите ввод нового пароля, чтобы исключить возможность опечатки.</div>
+            <div class="row">
+              <form action="#" class="col-md-6">
+                <div class="form-group">
+                  <input type="password" class="form-control" placeholder="Введите пароль">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" placeholder="Введите пароль">
+                </div>
+                <button type="submit" class="btn btn-success">Сохранить</button>
+              </form>
             </div>
-            <label class="form-group">
-              <span>Пользователи</span>
-              <select class="form-control select">
-                <option>Физ. лица</option>
-                <option>Юр. лица</option>
-              </select>
-            </label>
-            <button type="submit" class="btn btn-success">Создать закупку</button>
-          </form>
+          </div>
         </div>
       </div>
     </div>
@@ -391,6 +392,40 @@
       <span class="logo-svg"></span>
       <span class="play-svg"></span>
     </a>
+  </div>
+
+  <!-- Фотография профиля -->
+  <div class="modal fade changePhotoModal" id="changePhotoModal" tabindex="-1" role="dialog" aria-labelledby="changePhotoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title" id="changePhotoModalLabel">Фотография профиля</div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+              <g>
+                <g>
+                  <polygon class="st0" points="16,1.6 14.4,0 8,6.4 1.6,0 0,1.6 6.4,8 0,14.4 1.6,16 8,9.6 14.4,16 16,14.4 9.6,8    "/>
+                </g>
+              </g>
+            </svg>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="text-block">
+            Выбранная область будет показываться в вашем профиле. Настройте размер области.
+          </div>
+          <form action="#">
+            <canvas class="change-photo-area">
+              <!-- Тут канва с редактированием фото -->
+            </canvas>
+            <div class="btns">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal" aria-label="Close">Вернуться</button>
+              <button type="button" class="btn btn-success">Сохранить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Просмотр презентации -->
@@ -485,7 +520,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha256-DHF4zGyjT7GOMPBwpeehwoey18z8uiz98G4PRu2lV0A=" crossorigin="anonymous"></script>
   <script src="js/all.js"></script>
-  <script src="js/lk-procurement-add-page.js"></script>
 </body>
 
 </html>
